@@ -1,19 +1,12 @@
 import mongoose from "mongoose";
 import config from "./config.js";
 
-(async () => {
-	try {
-		const db = await mongoose.connect(
-			`mongodb://${config.MONGO_HOST}/${config.MONGO_DB}`, {
-				useUnifiedTopology: true,
-				useNewUrlParser: true,
-				 // user: config.MONGO_USER,
-				 // pass: config.MONGO_PASSWORD
-			}
-		);
-		console.log(` |> database connected: ${db.connection.name}`)
-	}
-	catch (error) {
-		console.log(error);
-	}
-})();
+const MONGODB_URI = `mongodb+srv://molucax:${config.MONGO_PASSWORD}@drinkscluster.miouw.mongodb.net/drinks?retryWrites=true&w=majority`
+
+mongoose
+	.connect(MONGODB_URI, {
+		useUnifiedTopology: true,
+ 		useNewUrlParser: true,
+	})
+	.then(db => console.log(` |> database connected: ${db.connection.name}`))
+	.catch(err => console.log(error));
