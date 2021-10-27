@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { 
     GET_PRODUCTS, 
-    // GET_PRODUCTS_DETAILS,
+    GET_PRODUCTS_DETAILS,
     // GET_PRODUCTS_NAME, 
     // FILTER_CERVEZA, 
     // FILTER_DESTILADOS, 
@@ -25,3 +25,19 @@ export const getProducts = () => async (dispatch) => {
         console.log(error);
     }
   };
+
+  
+export const getProductsDetails = (id) => async (dispatch) => {
+    try {
+        const res = await axios.get("/user/items/" + id);
+        
+        return dispatch({
+            type: GET_PRODUCTS_DETAILS,
+            payload: res.data,
+        });
+    } catch (error) {
+        console.log(error);
+    }
+  };
+
+  

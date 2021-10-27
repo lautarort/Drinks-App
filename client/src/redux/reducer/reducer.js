@@ -1,4 +1,4 @@
-import { GET_PRODUCTS } from "../actions/const";
+import { GET_PRODUCTS, GET_PRODUCTS_DETAILS } from "../actions/const";
 
 const initialState={
     products: [],
@@ -16,7 +16,11 @@ function reducer(state= initialState, action){
                 ...state,
                 products: action.payload
             };
-        
+            case GET_PRODUCTS_DETAILS:
+                return {
+                    ...state,
+                    product: action.payload
+                };
         default:
             return state
 
