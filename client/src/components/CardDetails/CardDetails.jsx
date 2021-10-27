@@ -18,7 +18,7 @@ function CardDetails(props) {
   
     return (
         <div>
-            <h1>1000</h1>
+            
                 <h1> {product.name} </h1>
                 <img src={product.imagen? product.imagen : `${product}` } alt="img" /> 
                 <h2> {product.precio} </h2>
