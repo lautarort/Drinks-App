@@ -1,0 +1,201 @@
+
+.ctnSuperior {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 8%;
+  
+}
+
+.h1{
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  height: 940px;
+  width: 843px;
+  min-height: auto;
+  min-width: auto;
+  position: relative;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+}
+
+.img {
+  height: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ctnCompra {
+  width: 40%;
+}
+
+.shortDes{
+font-family: roboto, sans-serif;
+font-size: 16px;
+height: 448px;
+width: 452px;
+padding: 32px 32px 32px 32px;
+display: block;
+box-sizing: border-box;
+
+}
+
+.titulo {
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: rgb(0, 0, 0);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 28px;
+  border-top: solid 1px rgb(0, 0, 0);
+  border-bottom: solid 1px rgb(0, 0, 0);
+  /* font-family: "Courier New", Courier, monospace; */
+}
+
+.Ctnprecio {
+  font-family: inherit;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.p {
+  font-family: inherit;
+  font-weight: 400;
+  margin-top: 0px;
+  font-size: 17px;
+  line-height: 1.1em;
+}
+
+.precio {
+  font-family: inherit;
+  font-weight: 600;
+  margin-top: 0px;
+  font-size: 25px;
+  line-height: 1.1em;
+}
+
+.ctnDescripcion {
+  width: 23%;
+}
+
+.tituloDescripcion {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: left;
+}
+
+.texDescripcion {
+  font-weight: 400;
+  margin-top: 18px;
+  font-size: 13px;
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+}
+
+.cart {
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  background-color: #FFFF ;
+  height: 166.33px;
+  width: 388px;
+  margin: 20px 0 0 0;
+  display: block;
+  box-sizing: border-box;
+}
+
+.añadir {
+  width: 350px;
+  margin-top: 10px;
+  padding: 8px 3px;
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #000000bb;
+  border-radius: 0.35em;
+  cursor: pointer;
+}
+
+.añadir:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  border: solid 1px black;
+}
+
+.comprar {
+  width: 350px;
+  margin-top: 30px;
+  padding: 8px 3px;
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+  background-color: #000000;
+  border-radius: 0.35em;
+  cursor: pointer;
+}
+.comprar:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  border: solid 1px black;
+}
+
+.contador {
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  background-color: #ffff;
+  color: #000;
+  height: 42px;
+  width: 150px;
+  border: 1px solid #dddd;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.boton {
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  background-color: rgb(20, 20, 20);
+  color: rgb(250, 248, 248);
+  width: 22px;
+  cursor: pointer;
+  font-weight: 800;
+ 
+}
+
+.boton:hover{
+  background-color: rgba(20, 20, 20, 0.664);
+}
+
+/* .count{
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  text-decoration: none solid(34, 34, 34);
+  text-align: center;
+  word-spacing: 0px;
+  background-color: #FFFF;
+  background-position: 0% 0%;
+  color: #2222;
+  height: 40px;
+  width: 40px;
+  min-height: auto;
+  min-width: auto;
+  display: block;
+  transition: all 0.3s ease-out 0s;
+  box-sizing: border-box;
+} */

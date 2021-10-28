@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { 
+    GET_PRODUCTS_DETAILS,
     GET_PRODUCTS,
     GET_CATEGORIES,
     FILTER_BY_CATEGORY,
@@ -29,6 +30,15 @@ export const getProducts = () => async (dispatch) => {
     }
   };
 
+
+  
+export const getProductsDetails = (id) => async (dispatch) => {
+    try {
+        const res = await axios.get("/user/items/" + id);
+        
+        return dispatch({
+            type: GET_PRODUCTS_DETAILS,
+
 export const getCategories = () => async (dispatch) => {
     try {
         let categories = await axios.get("/user/items/categories");
@@ -47,12 +57,16 @@ export const getCategories = () => async (dispatch) => {
         const res = await axios.get(`/user/items/filter/${category}`);
         return dispatch({
             type: FILTER_BY_CATEGORY,
+
             payload: res.data,
         });
     } catch (error) {
         console.log(error);
     }
   };
+
+
+  
 
   export const setPage = (page) => {
     return {
@@ -67,3 +81,4 @@ export const getCategories = () => async (dispatch) => {
         payload: category
     }
   };
+
