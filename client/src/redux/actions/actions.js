@@ -2,7 +2,9 @@ import axios from 'axios';
 import { 
     GET_PRODUCTS,
     GET_CATEGORIES,
-    FILTER_BY_CATEGORY, 
+    FILTER_BY_CATEGORY,
+    SET_PAGE,
+    SET_CATEGORY,
     // GET_PRODUCTS_DETAILS,
     // GET_PRODUCTS_NAME, 
     // FILTER_CERVEZA, 
@@ -40,7 +42,7 @@ export const getCategories = () => async (dispatch) => {
     }
 };
 
-  export const filterByCategory = ({category}) => async (dispatch) =>  {
+  export const filterByCategory = (category) => async (dispatch) =>  {
     try {
         const res = await axios.get(`/user/items/filter/${category}`);
         return dispatch({
@@ -49,5 +51,19 @@ export const getCategories = () => async (dispatch) => {
         });
     } catch (error) {
         console.log(error);
+    }
+  };
+
+  export const setPage = (page) => {
+    return {
+        type: SET_PAGE,
+        payload: page
+    }
+  };
+
+  export const setCategory = (category) => {
+    return {
+        type: SET_CATEGORY,
+        payload: category
     }
   };
