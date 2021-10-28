@@ -1,10 +1,13 @@
 import React from 'react';
 import Cards from '../Cards/Cards';
+import Categories from "../Categories/Categories";
+import Pagination from "../Pagination/Pagination";
 
 const Home = () => {
     return (
         <div>
-            Desarrolladores Full-Scabio
+            <Pagination />
+            <Categories />
             <Cards />
         </div>
     )
