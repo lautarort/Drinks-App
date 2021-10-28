@@ -2,8 +2,8 @@ import { GET_PRODUCTS, GET_CATEGORIES, FILTER_BY_CATEGORY, SET_PAGE, SET_CATEGOR
 import { sliceArray } from "./sliceArray";
 
 const initialState={
-    products: [],
-    allProducts: [],
+    products: [], // contiene sólo los productos de una página
+    allProducts: [], // contiene todos los productos
     cart: [],
     product: {},
     user: {},
@@ -14,12 +14,12 @@ const initialState={
 }
 
 function reducer(state= initialState, action){
-    // let allProducts = [...action.payload];
-    // let products = [...action.payload];
+    let allProducts;
+    let products;
     switch(action.type){
         case GET_PRODUCTS:
-            let allProducts = [...action.payload];
-            let products = [...action.payload];
+            allProducts = [...action.payload];
+            products = [...action.payload];
             products = sliceArray(state.page, products);
             return {
                 ...state,
@@ -32,13 +32,13 @@ function reducer(state= initialState, action){
                 categories: action.payload
             }
         case FILTER_BY_CATEGORY:
-            let todos = [...action.payload];
-            let items = [...action.payload];
-            items = sliceArray(state.page, items);
+            allProducts = [...action.payload];
+            products = [...action.payload];
+            products = sliceArray(state.page, products);
             return {
                 ...state,
-                products: items,
-                allProducts: todos
+                products: products,
+                allProducts: allProducts
             }
         case SET_PAGE:
             return {

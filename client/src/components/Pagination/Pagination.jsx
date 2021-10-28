@@ -11,11 +11,10 @@ const Pagination = () => {
 	const changePage = (page) => {
 		dispatch(setPage(page))
 		if (category) {
-			console.log(category)
 			dispatch(filterByCategory(category));
 		}
 		else {
-			dispatch(getProducts())
+			dispatch(getProducts());
 		}
 	}
 
