@@ -27,27 +27,32 @@ function CardDetails(props) {
 
   
     return (
-        <div className={style.all}>
-            
-                <h1 className={style.titulo}> {product.name} </h1>
+                <div className={style.all}>
+                <div className={style.h1}>
                 <img className={style.img} src={product.imagen? product.imagen : `${product}` } alt="img" /> 
-                <h2 className={style.precio}> Precio: {product.precio} </h2>
-                <h2 className={style.categoria}> Categoría de bebida: {product.categoria} </h2>
-                <h2 className={style.rating}> Rating: {product.rating} </h2>
-                <h2 className={style.descripcion}> Decripción de la bebida:  </h2>
+                {/* <h2 className={style.descripcion}> Decripción de la bebida:  </h2> */}
                 <h3 className={style.oneDescripcion}>{product.descripcion}</h3> 
-            
+                </div>
+                <div className={style.shortDes}>
+                <h1 className={style.titulo}> {product.name} </h1>
+                <h2 className={style.precio}>  {product.precio} </h2>
+                <h2 className={style.categoria}>  {product.categoria} </h2>
+                <h2 className={style.rating}>  {product.rating} </h2>
+                
+                <div className={style.cart}>
+                <div className={style.contador}>
+                <button  className={style.boton} onClick={() => setCount(count - 1)} > - </button>
+                <h4 className={style.count}>{count}</h4>
+                <button className={style.boton}  onClick={() => setCount(count + 1)} > + </button>
+                {/* if({count} === 1) disable */}
+                </div>
                 <div>
                 <button className={style.comprar}>Comprar</button>
                 </div>
                 <div>
                 <button className={style.añadir}>Agregar al carrito</button>
                 </div>
-                <div className={style.contador}>
-                <button  className={style.boton} onClick={() => setCount(count - 1)} > - </button>
-                <h4 className={style.count}>{count}</h4>
-                <button className={style.boton}  onClick={() => setCount(count + 1)} > + </button>
-                {/* if({count} === 1) disable */}
+                </div>
                 </div>
             
         </div>

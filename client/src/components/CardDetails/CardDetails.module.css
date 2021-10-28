@@ -1,13 +1,27 @@
-.Cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
 
 .all {
-  display: flexbox;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  height: 942px;
+  width: 1300px;
+  border: 1px solid #DDDD;
+  margin: 0 249px 0 249px;
+  display: flex;
+  box-sizing: border-box;
  
+}
+
+.h1{
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  height: 940px;
+  width: 843px;
+  min-height: auto;
+  min-width: auto;
+  position: relative;
+  float: left;
+  display: block;
+  box-sizing: border-box;
 }
 
 .img {
@@ -15,17 +29,49 @@
   display: flexbox;
 }
 
+.shortDes{
+font-family: roboto, sans-serif;
+font-size: 16px;
+height: 448px;
+width: 452px;
+padding: 32px 32px 32px 32px;
+display: block;
+box-sizing: border-box;
+
+}
+
 .titulo {
+
   color: rgb(0, 0, 0);
-  font-family: "Courier New", Courier, monospace;
+  font-family: roboto, sans-serif;
+  font-size: 24 px;
+  font-weight: 500;
+  line-height: 28px;
+  background-color: #FFFF;
+  background-position: 0% 0%;
+  height: 28px;
+  width: 3880px;
+  margin: 8px 0 8px 0;
+  display: block;
+  box-sizing: border-box;
 }
 
 .precio {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  margin: 10px;
-  color: black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 300;
+  line-height: 0px;
+  background-color: #FFFF;
+  height: 40px;
+  width: 388px;
+  margin: 16px 0 14px 0;
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  display: block;
+  box-sizing: border-box;
+
 }
 
 .categoria {
@@ -50,6 +96,17 @@
   background-color: rgb;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+.cart {
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  background-color: #FFFF ;
+  height: 166.33px;
+  width: 388px;
+  margin: 20px 0 0 0;
+  display: block;
+  box-sizing: border-box;
 }
 
 .añadir {
