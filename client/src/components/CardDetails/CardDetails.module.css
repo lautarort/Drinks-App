@@ -1,7 +1,53 @@
 .Cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.all {
+  display: flexbox;
+ 
+}
+
+.img {
+  height: 400px;
+  display: flexbox;
+}
+
+.titulo {
+  color: aqua;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.precio {
+  border-radius: 30px;
+  background-color: beige;
+  margin: 10px;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.categoria {
+  border-radius: 50px;
+  background-color: beige;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rating {
+  background-color: beige;
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.descripcion {
+  margin-top: 30px;
+  background-color: beige;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.oneDescripcion {
+  background-color: cornsilk;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
