@@ -1,0 +1,48 @@
+.NavBar {
+  background-color: rgb(22, 22, 22);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  overflow: hidden;
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.SC {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.icono {
+  height: 30px;
+  width: 30px;
+}
+
+.imgIcono {
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+}
+
+.btns {
+  margin: 0 auto;
+  padding: 0.5em 1.5em;
+  border: 0;
+  color: white;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #000000c0;
+  border-radius: 0.35em;
+  cursor: pointer;
+}
+
+.btns:hover {
+  background-color: rgba(255, 255, 255, 0.904);
+  color: rgb(0, 0, 0);
+}
