@@ -6,7 +6,6 @@ import Pagination from "../Pagination/Pagination";
 const Home = () => {
     return (
         <div>
-            Desarrolladores Full-Scabio
             <Pagination />
             <Categories />
             <Cards />

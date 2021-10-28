@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import style from './Categories.module.css';
 import { getProducts, getCategories, filterByCategory, setCategory, setPage } from '../../redux/actions/actions';
 
 const Categories = () => {
@@ -24,15 +25,15 @@ const Categories = () => {
 	}
 
 	return (
-		<div>
-		<button value="" onClick={handleClick}>TODOS</button>
-		{
-			categories && categories.map(x => {
-				return (
-					<button value={x} onClick={handleClick}>{x.toUpperCase()}</button>
-				)
-			})
-		}
+		<div className={style.Categories}>
+			<button className={style.btn} value="" onClick={handleClick}>TODOS</button>
+			{
+				categories && categories.map(x => {
+					return (
+						<button className={style.btn} value={x} onClick={handleClick}>{x.toUpperCase()}</button>
+					)
+				})
+			}
 		</div>
 	)
 }
