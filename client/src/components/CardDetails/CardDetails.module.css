@@ -1,137 +1,147 @@
-.Cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
 
-.all {
-  display: flexbox;
- 
+.ctnSuperior {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 8%;
+  
 }
 
 .img {
   height: 400px;
-  display: flexbox;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ctnCompra {
+  width: 40%;
 }
 
 .titulo {
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: rgb(0, 0, 0);
-  font-family: "Courier New", Courier, monospace;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 28px;
+  border-top: solid 1px rgb(0, 0, 0);
+  border-bottom: solid 1px rgb(0, 0, 0);
+  /* font-family: "Courier New", Courier, monospace; */
+}
+
+.Ctnprecio {
+  font-family: inherit;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p {
+  font-family: inherit;
+  font-weight: 400;
+  margin-top: 0px;
+  font-size: 17px;
+  line-height: 1.1em;
 }
 
 .precio {
-  border-radius: 30px;
-  background-color: rgb(255, 255, 255);
-  margin: 10px;
-  color: black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: inherit;
+  font-weight: 600;
+  margin-top: 0px;
+  font-size: 25px;
+  line-height: 1.1em;
 }
 
-.categoria {
-  border-radius: 50px;
-  background-color: rgb;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.ctnDescripcion {
+  width: 23%;
 }
 
-.rating {
-  background-color: rgb;
-  border-radius: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.tituloDescripcion {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: left;
 }
 
-.descripcion {
-  margin-top: 30px;
-  background-color: rgb;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.oneDescripcion {
-  background-color: rgb;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.texDescripcion {
+  font-weight: 400;
+  margin-top: 18px;
+  font-size: 13px;
+  text-align: left;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
 }
 
 .añadir {
-  font-family: roboto, sans-serif;
+  width: 350px;
+  margin-top: 10px;
+  padding: 8px 3px;
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  letter-spacing: 1px;
   font-size: 18px;
-  text-decoration: none solid rgb(52, 131, 250);
-  text-align: center;
-  word-spacing: 0px;
-  background-color: #cadef8;
-  color: #3333da;
-  height: 46px;
-  width: 389px;
-  margin: 24px;
-  padding: 12px 20px 12px 20px;
-  display: inline-block;
+  font-weight: 400;
+  background-color: #000000bb;
+  border-radius: 0.35em;
   cursor: pointer;
-  transform: none;
-  /* outline: rgb(255, 0, 0) dashed 1.25px; */
-  box-sizing: border-box;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+}
 
+.añadir:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  border: solid 1px black;
 }
 
 .comprar {
-  font-family: roboto, sans-serif;
+  width: 350px;
+  margin-top: 30px;
+  padding: 8px 3px;
+  border: 0;
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-weight: 400;
   font-size: 18px;
-  text-decoration: none solid rgb(52, 131, 250);
-  text-align: center;
-  word-spacing: 0px;
-  background-color: #3483FA;
-  color: #FFFF;
-  height: 46px;
-  width: 389px;
-  margin: 24px;
-  padding: 12px 20px 12px 20px;
-  display: inline-block;
+  letter-spacing: 1px;
+  background-color: #000000;
+  border-radius: 0.35em;
   cursor: pointer;
-  transform: none;
-  /* outline: rgb(255, 0, 0) dashed 1.25px; */
-  box-sizing: border-box;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-
+}
+.comprar:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  border: solid 1px black;
 }
 
-.contador{
+.contador {
   font-family: roboto, sans-serif;
   font-size: 16px;
   background-color: #ffff;
   color: #000;
   height: 42px;
-  width: 100px;
-  border: 1px solid #DDDD;
-  padding: 0 10px 0 10px;
-  position: relative;
+  width: 150px;
+  border: 1px solid #dddd;
   display: flex;
-  overflow: hidden;
   box-sizing: border-box;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 .boton {
   font-family: roboto, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   background-color: rgb(20, 20, 20);
-  color: rgba(250, 248, 248, 0);
-  height: 20px;
-  width: 18px;
-  min-height: auto;
-  min-width: auto;
-  display: block;
+  color: rgb(250, 248, 248);
+  width: 22px;
   cursor: pointer;
-  box-sizing: border-box;
+  font-weight: 800;
+ 
+}
 
+.boton:hover{
+  background-color: rgba(20, 20, 20, 0.664);
 }
 
 /* .count{
