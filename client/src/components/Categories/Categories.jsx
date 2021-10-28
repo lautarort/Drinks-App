@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getProducts, getCategories, filterByCategory } from '../../redux/actions/actions';
+import { getProducts, getCategories, filterByCategory, setCategory, setPage } from '../../redux/actions/actions';
 
 const Categories = () => {
 
@@ -13,11 +13,13 @@ const Categories = () => {
 	const { categories } = useSelector(state => state);
 
 	function handleClick (e) {
+		dispatch(setCategory(e.target.value))
 		if (!e.target.value) {
 			dispatch(getProducts());
 		}
 		else {
-			dispatch(filterByCategory({ category: e.target.value }));
+			dispatch(setPage(1));
+			dispatch(filterByCategory(e.target.value));
 		}
 	}
 
