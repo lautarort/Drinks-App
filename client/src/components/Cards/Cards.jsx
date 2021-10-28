@@ -12,7 +12,7 @@ const Cards = () => {
         dispatch(getProducts());
     }, [dispatch]);
 
-    console.log('products', products);
+    // console.log('products', products);
     // console.log('getProducts', getProducts())
     return (
         <div className={style.Cards}>{
