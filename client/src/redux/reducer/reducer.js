@@ -1,4 +1,4 @@
-import { GET_PRODUCTS, GET_CATEGORIES, FILTER_BY_CATEGORY, SET_PAGE, SET_CATEGORY } from "../actions/const";
+import { GET_PRODUCTS, GET_CATEGORIES, SET_PAGE, SET_CATEGORY } from "../actions/const";
 import { sliceArray } from "./sliceArray";
 
 const initialState={
@@ -14,12 +14,10 @@ const initialState={
 }
 
 function reducer(state= initialState, action){
-    let allProducts;
-    let products;
     switch(action.type){
         case GET_PRODUCTS:
-            allProducts = [...action.payload];
-            products = [...action.payload];
+            let allProducts = [...action.payload];
+            let products = [...action.payload];
             products = sliceArray(state.page, products);
             return {
                 ...state,
@@ -30,15 +28,6 @@ function reducer(state= initialState, action){
             return {
                 ...state,
                 categories: action.payload
-            }
-        case FILTER_BY_CATEGORY:
-            allProducts = [...action.payload];
-            products = [...action.payload];
-            products = sliceArray(state.page, products);
-            return {
-                ...state,
-                products: products,
-                allProducts: allProducts
             }
         case SET_PAGE:
             return {

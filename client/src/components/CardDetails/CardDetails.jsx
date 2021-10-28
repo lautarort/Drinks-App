@@ -1,9 +1,10 @@
 import React from 'react';
+/* import Review from '../Review/review'; */
 
 const CardDetails = () => {
     return (
         <div>
-            CardDetails
+            <p>CardDetails</p>
         </div>
     )
 
