@@ -16,13 +16,13 @@
 }
 
 .titulo {
-  color: aqua;
+  color: rgb(0, 0, 0);
   font-family: "Courier New", Courier, monospace;
 }
 
 .precio {
   border-radius: 30px;
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
   margin: 10px;
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -30,24 +30,24 @@
 
 .categoria {
   border-radius: 50px;
-  background-color: beige;
+  background-color: rgb;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .rating {
-  background-color: beige;
+  background-color: rgb;
   border-radius: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .descripcion {
   margin-top: 30px;
-  background-color: beige;
+  background-color: rgb;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .oneDescripcion {
-  background-color: cornsilk;
+  background-color: rgb;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
