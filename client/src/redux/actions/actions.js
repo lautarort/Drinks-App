@@ -2,11 +2,9 @@ import axios from 'axios';
 import { 
     GET_PRODUCTS,
     GET_CATEGORIES,
-    FILTER_BY_CATEGORY,
     SET_PAGE,
     SET_CATEGORY,
     // GET_PRODUCTS_DETAILS,
-    // GET_PRODUCTS_NAME, 
     // FILTER_CERVEZA, 
     // FILTER_DESTILADOS, 
     // FILTER_ESPUMANTES, 
@@ -17,9 +15,9 @@ import {
 } from './const';
 
 
-export const getProducts = () => async (dispatch) => {
+export const getProducts = ({name, category}) => async (dispatch) => {
     try {
-        const res = await axios.get(`/user/items`);
+        const res = await axios.get(`/user/items?name=${name ? name : ""}&category=${category ? category : ""}`);
         return dispatch({
             type: GET_PRODUCTS,
             payload: res.data,
@@ -28,6 +26,8 @@ export const getProducts = () => async (dispatch) => {
         console.log(error);
     }
   };
+
+
 
 export const getCategories = () => async (dispatch) => {
     try {
@@ -41,18 +41,6 @@ export const getCategories = () => async (dispatch) => {
         console.log(error);
     }
 };
-
-  export const filterByCategory = (category) => async (dispatch) =>  {
-    try {
-        const res = await axios.get(`/user/items/filter/${category}`);
-        return dispatch({
-            type: FILTER_BY_CATEGORY,
-            payload: res.data,
-        });
-    } catch (error) {
-        console.log(error);
-    }
-  };
 
   export const setPage = (page) => {
     return {

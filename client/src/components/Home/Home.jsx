@@ -6,9 +6,9 @@ import Pagination from "../Pagination/Pagination";
 const Home = () => {
     return (
         <div>
-            <Pagination />
             <Categories />
             <Cards />
+            <Pagination />
         </div>
     )
 
