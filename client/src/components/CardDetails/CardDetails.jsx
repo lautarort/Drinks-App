@@ -23,11 +23,7 @@ function CardDetails(props) {
         console.log("sin dependecias")
     })
 
-
-
     return (
-
-
         <div className={style.ctnSuperior}>
             <div className={style.ctnDescripcion}>
                 <h1 className={style.tituloDescripcion}> Decripción de la bebida  </h1>
@@ -51,7 +47,6 @@ function CardDetails(props) {
                     </div>
                 </div>
 
-
                 <div>
                     <button className={style.comprar}>Comprar</button>
                 </div>
@@ -59,11 +54,8 @@ function CardDetails(props) {
                     <button className={style.añadir}>Agregar al carrito</button>
                 </div>
             </div>
-
         </div>
-
     );
-
 }
-export default CardDetails;
 
+export default CardDetails;

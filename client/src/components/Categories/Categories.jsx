@@ -15,13 +15,9 @@ const Categories = () => {
 
 	function handleClick (e) {
 		dispatch(setCategory(e.target.value))
-		if (!e.target.value) {
-			dispatch(getProducts());
-		}
-		else {
-			dispatch(setPage(1));
-			dispatch(filterByCategory(e.target.value));
-		}
+		dispatch(setPage(1));
+		dispatch(getProducts({category: e.target.value}));
+		
 	}
 
 	return (

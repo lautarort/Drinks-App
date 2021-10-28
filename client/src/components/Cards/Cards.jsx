@@ -9,7 +9,7 @@ const Cards = () => {
     const { products } = useSelector( state => state);
 
     useEffect(() => {
-        dispatch(getProducts());
+        dispatch(getProducts({}));
     }, [dispatch]);
 
     // console.log('products', products);
