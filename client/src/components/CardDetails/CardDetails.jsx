@@ -38,15 +38,16 @@ function CardDetails(props) {
                 <h3 className={style.oneDescripcion}>{product.descripcion}</h3> 
             
                 <div>
-                <button>Comprar</button>
+                <button className={style.comprar}>Comprar</button>
                 </div>
                 <div>
-                <button>Añadir al carrito</button>
+                <button className={style.añadir}>Agregar al carrito</button>
                 </div>
-                <div>
-                <button onClick={() => setCount(count + 1)} > + </button>
-                <h4>{count}</h4>
-                <button onClick={() => setCount(count - 1)} > - </button>
+                <div className={style.contador}>
+                <button  className={style.boton} onClick={() => setCount(count - 1)} > - </button>
+                <h4 className={style.count}>{count}</h4>
+                <button className={style.boton}  onClick={() => setCount(count + 1)} > + </button>
+                {/* if({count} === 1) disable */}
                 </div>
             
         </div>
