@@ -37,18 +37,7 @@ function CardDetails(props) {
                 <h2 className={style.descripcion}> Decripción de la bebida:  </h2>
                 <h3 className={style.oneDescripcion}>{product.descripcion}</h3> 
             
-            <div>
-                <button>Comprar</button>
-            </div>
-            <div>
-                <button>Añadir al carrito</button>
-                </div>
-            <div>
-                <button onClick={() => setCount(count + 1)} > + </button>
-                <button onClick={() => setCount(count - 1)} > - </button>
-                <h4>{count}</h4>
-            </div>
-                
+
             
         </div>
     );
