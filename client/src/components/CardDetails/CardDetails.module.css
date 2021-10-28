@@ -7,6 +7,19 @@
   
 }
 
+.h1{
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  height: 940px;
+  width: 843px;
+  min-height: auto;
+  min-width: auto;
+  position: relative;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+}
+
 .img {
   height: 400px;
   margin-left: 20px;
@@ -17,7 +30,19 @@
   width: 40%;
 }
 
+.shortDes{
+font-family: roboto, sans-serif;
+font-size: 16px;
+height: 448px;
+width: 452px;
+padding: 32px 32px 32px 32px;
+display: block;
+box-sizing: border-box;
+
+}
+
 .titulo {
+
   padding-top: 5px;
   padding-bottom: 5px;
   color: rgb(0, 0, 0);
@@ -35,6 +60,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .p {
@@ -71,6 +97,17 @@
   text-align: left;
   letter-spacing: 0.5px;
   line-height: 1.5em;
+}
+
+.cart {
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  background-color: #FFFF ;
+  height: 166.33px;
+  width: 388px;
+  margin: 20px 0 0 0;
+  display: block;
+  box-sizing: border-box;
 }
 
 .añadir {

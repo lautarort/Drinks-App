@@ -27,6 +27,7 @@ function CardDetails(props) {
 
     return (
 
+
         <div className={style.ctnSuperior}>
             <div className={style.ctnDescripcion}>
                 <h1 className={style.tituloDescripcion}> Decripción de la bebida  </h1>
