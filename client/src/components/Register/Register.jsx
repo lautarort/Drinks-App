@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from './Register.module.css';
+import {Link} from "react-router-dom";
 
 const Register = () => {
     const [input, setInput] = useState({
@@ -10,7 +11,7 @@ const Register = () => {
 
     return (
         <div className={style.Register}>
-            <h1 className={style.titleRegister}>Introduzca los datos para registrarse</h1>
+            <p className={style.titleRegister}><b>REGISTRARSE</b></p>
             <form className={style.form}>
                 <div className={style.username}>
                     <label className={style.title}>Nombre de usuario</label>
@@ -36,6 +37,12 @@ const Register = () => {
                         // value={input.password}
                     />
                 </div>
+                <div>
+                <button className={style.btn}>REGISTRARSE</button>
+                </div>
+                <div className={style.link}>
+                    Ya tenes cuenta?  <Link to="/login">Ingresá</Link>
+                    </div>
             </form>
         </div>
     );
