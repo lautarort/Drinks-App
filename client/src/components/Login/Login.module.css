@@ -1,6 +1,6 @@
 .Login {
     margin-top: 12%;
-    margin-left: 23%;
+    margin-left: 35%;
     border: 2px solid gainsboro;
     background-color: rgb(247, 247, 247);
     display: flex;
@@ -8,14 +8,15 @@
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    height: 30%;
-    width: 55%;
+    height: max-content;
+    width: 30%;
     border-radius: 7px;
     box-shadow: 0 1rem 2rem hsl(0 0% 0% / 20%);
 }
 
 .titleLogin {
-    font-size: calc(1.375rem + 1.5vw);
+margin-bottom: 4rem;
+
 
     /* margin-top: 0;
   margin-bottom: 0.5rem;
@@ -24,10 +25,17 @@
 
 }
 
+
+.link{
+    margin-top: 3rem;
+}
+
+
+
 .username {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     padding-top: 5px;
     padding-bottom: 15px;
@@ -35,8 +43,8 @@
 
 .password {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     padding-top: 15px;
     padding-bottom: 35px;
@@ -45,7 +53,7 @@
 .title {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1.25rem;
+  font-size: 0.9rem;
 }
 
 .input {
@@ -72,4 +80,14 @@
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; */
+}
+
+
+
+.btn{
+    background-color: black;
+    color:white;
+    width: 100%;
+    height:35px;
+    border-radius: 0.25rem;
 }
