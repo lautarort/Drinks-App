@@ -10,20 +10,21 @@ const Login = () => {
     return (
         <div className={style.Login}>
             <form className={style.form}>
+                <h1 className={style.titleLogin}>Por favor loguearse con su usuario</h1>
                 <div className={style.username}>
-                    <label className={style.tlUsrName}>Username:</label>
-                    <input className={style.inputName}
+                    <label className={style.title}>Usuario</label>
+                    <input className={style.input}
                         type="text"
-                        placeholder='Your username o email...'
-                        value={input.username}
+                        placeholder='Su usuario o email...'
+                        // value={input.username}
                     />
                 </div>
                 <div className={style.password}>
-                    <label className={style.tlPassword}>Password:</label>
-                    <input className={style.inputPassword}
+                    <label className={style.title}>Contraseña</label>
+                    <input className={style.input}
                         type="text"
-                        placeholder='Your password...'
-                        value={input.password}
+                        placeholder='Su contraseña...'
+                        // value={input.password}
                     />
                 </div>
             </form>

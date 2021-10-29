@@ -10,29 +10,30 @@ const Register = () => {
 
     return (
         <div className={style.Register}>
+            <h1 className={style.titleRegister}>Introduzca los datos para registrarse</h1>
             <form className={style.form}>
                 <div className={style.username}>
-                    <label className={style.tlUsername}>Username:</label>
-                    <input className={style.inputUsername}
+                    <label className={style.title}>Nombre de usuario</label>
+                    <input className={style.input}
                         type="text"
-                        placeholder='Your username...'
-                        value={input.username}
+                        placeholder='Su nombre de usuario...'
+                        // value={input.username}
                     />
                 </div>
                 <div className={style.email}>
-                    <label className={style.tlEmail}>Email:</label>
-                    <input className={style.inputEmail}
+                    <label className={style.title}>Email</label>
+                    <input className={style.input}
                         type="text"
-                        placeholder='Your email...'
-                        value={input.email}
+                        placeholder='Su email...'
+                        // value={input.email}
                     />
                 </div>
                 <div className={style.password}>
-                    <label className={style.tlPassword}>Password:</label>
-                    <input className={style.inputPassword}
+                    <label className={style.title}>Contraseña</label>
+                    <input className={style.input}
                         type="text"
-                        placeholder='Your Password...'
-                        value={input.password}
+                        placeholder='Su contraseña...'
+                        // value={input.password}
                     />
                 </div>
             </form>
