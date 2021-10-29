@@ -4,18 +4,20 @@ import './App.css';
 import Home from './components/Home/Home';
 import NavBar from './components/NavBar/NavBar';
 import Cart from './components/Cart/Cart';
-import Landing from './components/Landing/Landing';
+import CardDetails from './components/CardDetails/CardDetails';
+// import Modal from './components/Modal/Modal';
 
 function App() {
   return (
     <div className="App">
       {/* <header className="App-header">
       </header> */}
-       <Route exact path='/' component={Landing}/>
-      <Route exact path="/home" component={Home} />
+      {/* <Route  path='/' component={Modal}/> */}
       <Route exact path='/carrito' component={Cart} />
-      <Route path='/home' component={NavBar} />
-    </div>
+      <Route path='/' component={NavBar} />
+      <Route exact path="/" component={Home} />
+      <Route path="/detail/:id" component={CardDetails} />
+      </div>
   );
 }
 
