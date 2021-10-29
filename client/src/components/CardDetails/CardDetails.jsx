@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getProductsDetails } from '../../redux/actions/actions';
 import { useState } from 'react';
 import style from './CardDetails.module.css';
+import Rating from '../Rating/Rating';
 
 
 
@@ -37,7 +38,7 @@ function CardDetails(props) {
                 <div className={style.Ctnprecio}>
                     <h2 className={style.precio}> Precio: {product.precio} </h2>
                     <h2 className={style.p}> Categoría de bebida: {product.categoria?.charAt(0).toUpperCase() + product.categoria?.slice(1)} </h2>
-                    <h2 className={style.p}> Rating: {product.rating} </h2>
+                    <h2 className={style.p}><Rating rating={product.rating} numReviews={5} /></h2>
                     <div className={style.contador}>
                         <p className={style.textCantidad}>Cantidad</p>
                         <button className={style.boton} onClick={() => setCount(count - 1)} > - </button>

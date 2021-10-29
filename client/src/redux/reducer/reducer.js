@@ -1,7 +1,7 @@
-import { GET_PRODUCTS, GET_CATEGORIES, SET_CATEGORY, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS } from "../actions/const";
+import { GET_PRODUCTS, GET_CATEGORIES, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS } from "../actions/const";
 import { sliceArray } from "./sliceArray";
 
-const initialState={
+const initialState = {
     products: [], // contiene sólo los productos de una página
     allProducts: [], // contiene todos los productos
     cart: [],
@@ -12,8 +12,8 @@ const initialState={
     page: 1,
 }
 
-function reducer(state= initialState, action){
-    switch(action.type){
+function reducer(state = initialState, action) {
+    switch (action.type) {
         case GET_PRODUCTS:
             let allProducts = [...action.payload];
             let products = [...action.payload];
@@ -31,16 +31,13 @@ function reducer(state= initialState, action){
         case SET_PAGE:
             return {
                 ...state,
-                products: action.payload
-            };
-            case GET_PRODUCTS_DETAILS:
-                return {
-                    ...state,
-                    product: action.payload
-                };
-
                 page: action.payload
-            }
+            };
+        case GET_PRODUCTS_DETAILS:
+            return {
+                ...state,
+                product: action.payload
+            };
         case SET_CATEGORY:
             return {
                 ...state,
@@ -48,7 +45,7 @@ function reducer(state= initialState, action){
             }
         default:
             return state
-        }         
+    }
 }
 
 
