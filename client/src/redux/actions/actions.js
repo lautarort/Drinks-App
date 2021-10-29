@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { 
+import {
     GET_PRODUCTS_DETAILS,
     GET_PRODUCTS,
     GET_CATEGORIES,
@@ -15,7 +15,7 @@ import {
 } from './const';
 
 
-export const getProducts = ({name, category}) => async (dispatch) => {
+export const getProducts = ({ name, category }) => async (dispatch) => {
     try {
         const res = await axios.get(`/user/items?name=${name ? name : ""}&category=${category ? category : ""}`);
         return dispatch({
@@ -25,12 +25,12 @@ export const getProducts = ({name, category}) => async (dispatch) => {
     } catch (error) {
         console.log(error);
     }
-  };
-  
+};
+
 export const getProductsDetails = (id) => async (dispatch) => {
     try {
         const res = await axios.get("/user/items/" + id);
-        
+
         return dispatch({
             type: GET_PRODUCTS_DETAILS,
             payload: res.data
@@ -53,30 +53,18 @@ export const getCategories = () => async (dispatch) => {
     }
 };
 
-  export const filterByCategory = (category) => async (dispatch) =>  {
-    try {
-        const res = await axios.get(`/user/items/filter/${category}`);
-        return dispatch({
-            type: FILTER_BY_CATEGORY,
-
-            payload: res.data,
-        });
-    } catch (error) {
-        console.log(error);
-    }
-  };
 
 
-  export const setPage = (page) => {
+export const setPage = (page) => {
     return {
         type: SET_PAGE,
         payload: page
     }
-  };
+};
 
-  export const setCategory = (category) => {
+export const setCategory = (category) => {
     return {
         type: SET_CATEGORY,
         payload: category
     }
-  };
+};
