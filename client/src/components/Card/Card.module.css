@@ -1,5 +1,5 @@
 .btn {
-  margin: 0 auto;
+  margin-bottom: 10px;
   padding: 1em 1.5em;
   border: 0;
   color: rgb(255, 255, 255);
@@ -22,7 +22,8 @@
   color: rgb(0, 0, 0);
   font-weight: 600;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 12px;
+  margin: 0px 8px 0px 8px;
 }
 
 .Card {
@@ -30,7 +31,7 @@
   justify-content: space-around;
   flex-direction: column;
   margin: 50px;
-  width: 245px;
+  width: 260px;
   height: 370px;
   text-align: center;
   top: 0px;
@@ -60,12 +61,12 @@
 .precio {
   font-weight: 600;
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .image {
   height: 200px;
-  width: 120px;
+  width: 110px;
   object-fit: cover;
   object-position: center center;
 }

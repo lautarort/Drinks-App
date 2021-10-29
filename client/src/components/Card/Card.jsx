@@ -8,10 +8,10 @@ const Card = (prod) => {
     let p = prod.prod
     // console.log('prod', prod.prod.name);
 
-    function addDefaultSrc(ev){
-        ev.target.src = img; 
+    function addDefaultSrc(ev) {
+        ev.target.src = img;
     };
- 
+
     return (
         <div className={style.Card}>
             <Link className={style.link} to={`/detail/${p._id}`}>
@@ -22,11 +22,12 @@ const Card = (prod) => {
                     <h3 className={style.name}>{p.name}</h3>
                 </div >
                 <div className={style.PR}>
-                   {/*  <p className={style.rating}>{p.rating}</p> */}
+                    {/*  <p className={style.rating}>{p.rating}</p> */}
+                    <Rating rating={p.rating} numReviews={5} />
                     <p className={style.precio}>{p.precio}</p>
                 </div>
             </Link>
-            <Rating rating={p.rating} numReviews={5}/>
+
             <div >
                 <button className={style.btn}>Agregar al carrito</button>
             </div>
