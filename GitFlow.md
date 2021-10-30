@@ -6,6 +6,8 @@ GLOSARIO COMANDOS:
 
 - git checkout -b nombrebranch:  con esto se cambia de rama hacia una nueva que creamos con el nombre que quieran (en este caso seria "nombrebranch")
 
+- git branch -d nombre_rama: Para eliminar una rama de nuestro repositorio local 
+
 -git checkout Master:  con esto se cambia a una rama existente (en este caso "Master")
 
 -git branch:  con esto podemos ver en que rama estamos y que otras existen en el repo
@@ -19,6 +21,9 @@ GLOSARIO COMANDOS:
 -git commit -m "comentario":  commiteo los cambios (aunque ya sabemos esto, siempre esta bueno que el nombre del comentario sea super especifico de lo que estamos haciendo)
 
 -git push: asegurarse siempre obvio que estemos en la rama que queremos pushear
+
+
+
 
 
 ------------------------------------------------------------------------------------------------------------
