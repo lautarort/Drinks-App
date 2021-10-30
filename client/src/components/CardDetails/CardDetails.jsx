@@ -11,11 +11,11 @@ function CardDetails(props) {
 
     const dispatch = useDispatch();
     const product = useSelector((state) => state.product);
-
+    const { id } = props.match.params;
 
     useEffect(() => {
-        dispatch(getProductsDetails(props.match.params.id));
-    }, [dispatch, props.match.params.id]);
+        dispatch(getProductsDetails(id));
+    }, [dispatch, id]);
 
     const [count, setCount] = useState(1);
 
@@ -57,7 +57,7 @@ function CardDetails(props) {
                 </div>
             </div>
             <div className={style.review}>
-                <Review />
+                <Review id={id} />
             </div>
 
         </div>

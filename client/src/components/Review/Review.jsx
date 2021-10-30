@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { FaStar } from "react-icons/fa";
-import style from "./Review.module.css"
+import style from "./Review.module.css";
+import { rateProduct } from "../../redux/actions/actions";
 
 const colors = {
   orange: "#FFBA5A",
   grey: "#a9a9a9"
 }
 
+export default function Review({ id }) {
 
-export default function Review() {
-
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const stars = Array(5).fill(0);
 
@@ -30,9 +30,10 @@ export default function Review() {
     setHoverValue(undefined)
   };
 
-  // const handleSubmit = () => {
-  //     dispatch(rateProduct({ rating: currentValue }))
-  // }
+  const handleSubmit = () => {
+      dispatch(rateProduct({number: currentValue, id }))
+      alert("Review recibida!")
+  }
 
   return (
     <div className={style.ctnSuperior}>
@@ -60,7 +61,7 @@ export default function Review() {
       <textarea className={style.textarea}
         placeholder="Deja un comentario..."
       />
-      <button className={style.btnEnviar}>Enviar</button>
+      <button onClick={() => handleSubmit()} className={style.btnEnviar}>Enviar</button>
     </div>
   )
 };
