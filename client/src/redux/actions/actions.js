@@ -5,6 +5,7 @@ import {
     GET_CATEGORIES,
     SET_PAGE,
     SET_CATEGORY,
+    RATE_PRODUCT,
     // FILTER_CERVEZA, 
     // FILTER_DESTILADOS, 
     // FILTER_ESPUMANTES, 
@@ -68,3 +69,16 @@ export const setCategory = (category) => {
         payload: category
     }
 };
+
+export const rateProduct = ({ number, id }) => async (dispatch) => {
+    try {
+        let res = await axios.put(`/user/items/update/${id}`, { number })
+        console.log(res.data)
+        return dispatch({
+            type: RATE_PRODUCT,
+        })
+    }
+    catch (error) {
+        console.log(error)
+    }
+}
