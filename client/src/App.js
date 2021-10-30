@@ -13,9 +13,9 @@ function App() {
     <div className="App">
       {/* <header className="App-header">
       </header> */}
+      <Route path='/' component={NavBar} />
       <Route exact path='/carrito' component={Cart} />
       <Route exact path='/:category' component={Cards} />
-      <Route path='/' component={NavBar} />
       <Route exact path='/register' component={Register} />
       <Route exact path='/login' component={Login} />
       <Route exact path="/" component={Home} />

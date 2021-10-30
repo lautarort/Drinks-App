@@ -19,7 +19,7 @@ const Card = (prod) => {
                     <img onError={addDefaultSrc} className={style.image} src={p.imagen} alt="img no encontrada" />
                 </div>
                 <div >
-                    <h3 className={style.name}>{p.name}</h3>
+                    <p className={style.name}>{p.name}</p>
                 </div >
                 <div className={style.PR}>
                     {/*  <p className={style.rating}>{p.rating}</p> */}

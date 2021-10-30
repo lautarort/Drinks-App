@@ -1,5 +1,5 @@
 .SearchBar {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .btn {
@@ -24,11 +24,11 @@
 .input {
   border: 0;
   margin-right: 12px;
-  /* height: 40px;*/
-  width: 250px;
+  height: 32px;
+  width: 300px;
   font-size: 17px;
   padding: 0.5em 0.5em;
   font-family: inherit;
-  background-color: rgb(226, 225, 225);
+  background-color: rgb(255, 255, 255);
   font-weight: 400;
 }
