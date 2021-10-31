@@ -20,10 +20,10 @@ const NavBar = () => {
                     <BsCart2 className={style.linkCart} />
                 </Link>
                 <Link className={style.login} to='/login'>
-                    <button className={style.btns}>Login</button>
+                    <button className={style.btns}>Loguearte</button>
                 </Link>
                 <Link className={style.register} to='/register'>
-                    <button className={style.btns}>Register</button>
+                    <button className={style.btns}>Registrarte</button>
                 </Link>
             </div>
 

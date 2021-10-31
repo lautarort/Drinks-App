@@ -7,7 +7,7 @@ export const getItems = async (req, res) => {
 		let items = await Item.find()
 		if (name){
 			items = items.filter(x => x.name.toLowerCase().includes(name.toLowerCase()))
-			res.json(items);
+			return res.json(items);
 		 																															 
 		} else {
 			if (category){
