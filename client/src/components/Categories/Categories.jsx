@@ -15,8 +15,8 @@ const Categories = () => {
 	const { categories } = useSelector(state => state);
 
 	function handleClick(e) {
-		dispatch(setCategory(e.target.value))
 		dispatch(unmountGet());
+		dispatch(setCategory(e.target.value))
 		dispatch(setPage(1));
 		dispatch(getProducts({ category: e.target.value }));
 	}
@@ -29,7 +29,7 @@ const Categories = () => {
 			{
 				categories && categories.map(x => {
 					return (
-						<Link to={`/${x}`}>
+						<Link to={`/category/${x}`}>
 							<button className={style.btn} value={x} onClick={handleClick}>{x.toUpperCase()}</button>
 						</Link>
 					)

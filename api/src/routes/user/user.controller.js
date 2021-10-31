@@ -25,7 +25,7 @@ export const getCategories = async(req, res) => {
 	try {
 		let categories = await Item.find();
 		categories = categories.map(x => x.categoria);
-		categories = [...new Set(categories)];
+	    categories = [...new Set(categories)];
 		res.json(categories);
 	}
 	catch (error) {

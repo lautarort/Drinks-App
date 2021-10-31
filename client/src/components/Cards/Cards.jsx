@@ -7,9 +7,10 @@ import style from './Cards.module.css';
 const Cards = () => {
     const dispatch = useDispatch();
     const { products } = useSelector( state => state);
+    const {category} = useSelector( state => state)
 
     useEffect(() => {
-        dispatch(getProducts({}));
+        dispatch(getProducts({category}));
         dispatch(unmountGet());
     }, [dispatch]);
 

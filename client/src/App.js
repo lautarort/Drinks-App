@@ -14,10 +14,10 @@ function App() {
       {/* <header className="App-header">
       </header> */}
       <Route path='/' component={NavBar} />
-      <Route exact path='/carrito' component={Cart} />
-      <Route exact path='/:category' component={Cards} />
       <Route exact path='/register' component={Register} />
       <Route exact path='/login' component={Login} />
+      <Route exact path='/carrito' component={Cart} />
+      <Route exact path='/category/:category' component={Cards} />
       <Route exact path="/" component={Home} />
       <Route path="/detail/:id" component={CardDetails} />
     </div>
