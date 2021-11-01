@@ -1,24 +1,19 @@
 import React from 'react';
 import Cards from '../Cards/Cards';
-import Categories from "../Categories/Categories";
 import Modal from '../Modal/Modal';
 import Pagination from "../Pagination/Pagination";
-
-
-
+import Pagination from "../Pagination/Pagination";  
+import CarouselCombo from "../CarouselCombo/CarouselCombo"
 
 const Home = () => {
- 
-
     return (
         <div>
+            <CarouselCombo />
             <Modal />
-            <Pagination />
-            <Categories />
             <Cards />
+            <Pagination />
         </div>
     )
-
 };
 
 export default Home;

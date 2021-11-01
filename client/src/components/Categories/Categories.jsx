@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import style from './Categories.module.css';
-import { getProducts, getCategories, filterByCategory, setCategory, setPage } from '../../redux/actions/actions';
+import { Link } from "react-router-dom";
+import { getProducts, getCategories, unmountGet, setCategory, setPage } from '../../redux/actions/actions';
 
 const Categories = () => {
 
@@ -13,24 +14,24 @@ const Categories = () => {
 
 	const { categories } = useSelector(state => state);
 
-	function handleClick (e) {
+	function handleClick(e) {
+		dispatch(unmountGet());
 		dispatch(setCategory(e.target.value))
-		if (!e.target.value) {
-			dispatch(getProducts());
-		}
-		else {
-			dispatch(setPage(1));
-			dispatch(filterByCategory(e.target.value));
-		}
+		dispatch(setPage(1));
+		dispatch(getProducts({ category: e.target.value }));
 	}
 
 	return (
 		<div className={style.Categories}>
-			<button className={style.btn} value="" onClick={handleClick}>TODOS</button>
+			<Link to="/">
+				<button className={style.btn} value="" onClick={handleClick}>TODOS</button>
+			</Link>
 			{
 				categories && categories.map(x => {
 					return (
-						<button className={style.btn} value={x} onClick={handleClick}>{x.toUpperCase()}</button>
+						<Link to={`/category/${x}`}>
+							<button className={style.btn} value={x} onClick={handleClick}>{x.toUpperCase()}</button>
+						</Link>
 					)
 				})
 			}

@@ -1,15 +1,17 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProducts } from '../../redux/actions/actions';
+import { getProducts, unmountGet } from '../../redux/actions/actions';
 import Card from '../Card/Card';
 import style from './Cards.module.css';
 
 const Cards = () => {
     const dispatch = useDispatch();
     const { products } = useSelector( state => state);
+    const {category} = useSelector( state => state)
 
     useEffect(() => {
-        dispatch(getProducts());
+        dispatch(getProducts({category}));
+        dispatch(unmountGet());
     }, [dispatch]);
 
     // console.log('products', products);

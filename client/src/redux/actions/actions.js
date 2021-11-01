@@ -1,12 +1,12 @@
 import axios from 'axios';
-import { 
+import {
+    GET_PRODUCTS_DETAILS,
     GET_PRODUCTS,
     GET_CATEGORIES,
-    FILTER_BY_CATEGORY,
+    UNMOUNT_GET,
     SET_PAGE,
     SET_CATEGORY,
-    // GET_PRODUCTS_DETAILS,
-    // GET_PRODUCTS_NAME, 
+    RATE_PRODUCT,
     // FILTER_CERVEZA, 
     // FILTER_DESTILADOS, 
     // FILTER_ESPUMANTES, 
@@ -17,9 +17,9 @@ import {
 } from './const';
 
 
-export const getProducts = () => async (dispatch) => {
+export const getProducts = ({ name, category }) => async (dispatch) => {
     try {
-        const res = await axios.get(`/user/items`);
+        const res = await axios.get(`/user/items?name=${name ? name : ""}&category=${category ? category : ""}`);
         return dispatch({
             type: GET_PRODUCTS,
             payload: res.data,
@@ -27,7 +27,20 @@ export const getProducts = () => async (dispatch) => {
     } catch (error) {
         console.log(error);
     }
-  };
+};
+
+export const getProductsDetails = (id) => async (dispatch) => {
+    try {
+        const res = await axios.get("/user/items/" + id);
+
+        return dispatch({
+            type: GET_PRODUCTS_DETAILS,
+            payload: res.data
+        })
+    } catch (error) {
+        console.log(error);
+    }
+};
 
 export const getCategories = () => async (dispatch) => {
     try {
@@ -42,28 +55,31 @@ export const getCategories = () => async (dispatch) => {
     }
 };
 
-  export const filterByCategory = (category) => async (dispatch) =>  {
-    try {
-        const res = await axios.get(`/user/items/filter/${category}`);
-        return dispatch({
-            type: FILTER_BY_CATEGORY,
-            payload: res.data,
-        });
-    } catch (error) {
-        console.log(error);
-    }
-  };
+export const unmountGet = () => ({ type: UNMOUNT_GET });
 
-  export const setPage = (page) => {
+export const setPage = (page) => {
     return {
         type: SET_PAGE,
         payload: page
     }
-  };
+};
 
-  export const setCategory = (category) => {
+export const setCategory = (category) => {
     return {
         type: SET_CATEGORY,
         payload: category
     }
-  };
+};
+
+export const rateProduct = ({ number, id }) => async (dispatch) => {
+    try {
+        let res = await axios.put(`/user/items/update/${id}`, { number })
+        console.log(res.data)
+        return dispatch({
+            type: RATE_PRODUCT,
+        })
+    }
+    catch (error) {
+        console.log(error)
+    }
+}

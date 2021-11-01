@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setPage, getProducts, filterByCategory } from "../../redux/actions/actions";
+import { setPage, getProducts } from "../../redux/actions/actions";
 
 const Pagination = () => {
 
@@ -11,10 +11,10 @@ const Pagination = () => {
 	const changePage = (page) => {
 		dispatch(setPage(page))
 		if (category) {
-			dispatch(filterByCategory(category));
+			dispatch(getProducts(category));
 		}
 		else {
-			dispatch(getProducts());
+			dispatch(getProducts({}));
 		}
 	}
 

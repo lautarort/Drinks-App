@@ -1,7 +1,7 @@
-import { GET_PRODUCTS, GET_CATEGORIES, FILTER_BY_CATEGORY, SET_PAGE, SET_CATEGORY } from "../actions/const";
+import { GET_PRODUCTS, GET_CATEGORIES, UNMOUNT_GET, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS } from "../actions/const";
 import { sliceArray } from "./sliceArray";
 
-const initialState={
+const initialState = {
     products: [], // contiene sólo los productos de una página
     allProducts: [], // contiene todos los productos
     cart: [],
@@ -10,16 +10,13 @@ const initialState={
     categories: [],
     category: "",
     page: 1,
-
 }
 
-function reducer(state= initialState, action){
-    let allProducts;
-    let products;
-    switch(action.type){
+function reducer(state = initialState, action) {
+    switch (action.type) {
         case GET_PRODUCTS:
-            allProducts = [...action.payload];
-            products = [...action.payload];
+            let allProducts = [...action.payload];
+            let products = [...action.payload];
             products = sliceArray(state.page, products);
             return {
                 ...state,
@@ -31,20 +28,25 @@ function reducer(state= initialState, action){
                 ...state,
                 categories: action.payload
             }
-        case FILTER_BY_CATEGORY:
-            allProducts = [...action.payload];
-            products = [...action.payload];
-            products = sliceArray(state.page, products);
+        case UNMOUNT_GET:
             return {
                 ...state,
-                products: products,
-                allProducts: allProducts
+                products: [],
+                allProducts: [],
+                product: {},
+                category: "",
+
             }
         case SET_PAGE:
             return {
                 ...state,
                 page: action.payload
-            }
+            };
+        case GET_PRODUCTS_DETAILS:
+            return {
+                ...state,
+                product: action.payload
+            };
         case SET_CATEGORY:
             return {
                 ...state,
@@ -52,11 +54,8 @@ function reducer(state= initialState, action){
             }
         default:
             return state
-        }         
+    }
 }
 
 
 export default reducer;
-
-
-
