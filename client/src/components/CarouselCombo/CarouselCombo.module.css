@@ -3,17 +3,15 @@
 }
 
 .btn {
-  width: 100px;
-  height: 25px;
-  margin-bottom: 5px;
+  margin: 0 auto;
+  padding: 0.5em 1.5em;
+  color: white;
   border: 1px solid rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   letter-spacing: 1px;
-  background-color: #ffffff00;
-  border-radius: 0.35em;
+  background-color: #00000000;
   cursor: pointer;
 }
 
@@ -27,6 +25,6 @@
 }
 
 .txt {
-  font-size: 25px;
-  letter-spacing: 2px;
+  font-size: 20px;
+  letter-spacing: 1px;
 }

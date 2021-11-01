@@ -1,4 +1,4 @@
-import { GET_PRODUCTS, GET_CATEGORIES, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS } from "../actions/const";
+import { GET_PRODUCTS, GET_CATEGORIES, UNMOUNT_GET, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS } from "../actions/const";
 import { sliceArray } from "./sliceArray";
 
 const initialState = {
@@ -27,6 +27,15 @@ function reducer(state = initialState, action) {
             return {
                 ...state,
                 categories: action.payload
+            }
+        case UNMOUNT_GET:
+            return {
+                ...state,
+                products: [],
+                allProducts: [],
+                product: {},
+                category: "",
+
             }
         case SET_PAGE:
             return {
