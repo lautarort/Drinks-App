@@ -1,29 +1,16 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
-import { Link } from 'react-router-dom';
+import style from './Modal.module.css';
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
-};
+
 const Mayor = () => {
   let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(true);
 
-  // function openModal() {
-  //   setIsOpen(true);
-  // }
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
-    subtitle.style.color = '#cccc';
+    subtitle.style.color = '';
   }
 
   function closeModal() {
@@ -31,24 +18,27 @@ const Mayor = () => {
   }
 
 
-
   return (
-      <div>
-      <Modal
+    <div  >
+      <Modal className={style.modal}
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
+        className={style.modal}
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>¿Sos mayor de 18 años?</h2>
-       
-        
-          <button onClick={closeModal}> SI </button>
-          <button>NO</button>
-        
+
+        <div className={style.ctnText}>
+          <h2 ref={(_subtitle) => (subtitle = _subtitle)}>¿Sos mayor de 18 años?</h2>
+
+          <div className={style.ctnBtns}>
+            <button className={style.btn} onClick={closeModal}> SI </button>
+            <button className={style.btn}>NO</button>
+          </div>
+        </div>
+
+
       </Modal>
-      </div>
+    </div>
   )
 
 };
