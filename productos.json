@@ -1,0 +1,366 @@
+{
+
+"productos":
+  [
+    {
+      "name": "Vino Luigi Bosca Malbec 750ml",
+      "precio": "$1.200,00",
+      "descripcion": "Color rojo rubí intenso. Presenta aromas de frutos rojos maduros, especias y pimienta negra. La intensidad de su entrada en boca se complementa con la suavidad y dulzor de los taninos. Un vino de gran cuerpo y estructura.",
+      "categoria": "vinos",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386131262/01_1600809684.webp?v=117921",
+      "rating": "4"
+    },
+    {
+      "name": "Vino Saint Felicien Unidad Malbec 750ml",
+      "precio": "$1.210,00",
+      "descripcion": "Este Malbec proviene de una selección de parcelas de nuestros Viñedos La Pirámide ubicado en Agrelo y Nicasia en Paraje Altamira. En nariz se presenta con intensos aromas frutales a ciruelas maduras con notas de flores violetas. En boca es un vino de gran estructura y suavidad a la vez, con una acidez fresca y vivaz y un final largo y persistente.",
+      "categoria": "vinos",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/500x1042_500x.jpg?v=1623265919",
+      "rating": "4"
+    },
+    {
+      "name": "Vino Trumpeter Reserve Malbec 750ml",
+      "precio": "$1.073,00",
+      "descripcion": "Vino Tinto Trumpeter Reserve Malbec. Color: Granate intenso, con reflejos purpúreos. Aroma: Es un típico y bien logrado ejemplo de la variedad estrella de la Argentina. Las notas aromáticas florales y frutadas (ciruela, cassis, frutilla) pueden ser fácilmente apreciadas. Sabor: La armónica redondez obtenida se debe, en parte, a los jugosos taninos que le otorgan además suavidad y largo final de boca.",
+      "categoria": "vinos",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/VINO-TRUMPETER-RESERVE-MALBEC-750ML-_883af4_28260_316x.jpg?v=1627076315",
+      "rating": "3"
+    },
+    {
+      "name": "Vino Alambrado Malbec 375ml",
+      "precio": "$495,00",
+      "descripcion": "Color: Rojo violáceo, profundo y vivaz con visos azulados.Aroma: Nariz de frutos rojos y negros como cerezas, cassis, ciruelas y moras, integrados con los aromas de maduración en barrica como vainilla, tabaco y chocolate. Sabor: Entrada en boca sedosa, buena estructura, con una marcada presencia de frutas rojas, taninos amables y dulces, concluyendo en un largo final de boca.",
+      "categoria": "vinos",
+      "graduacion de alcohol": "13.8%",
+      "imagen": "https://www.fullescabio.com/productos/1621366255/01_1621366255.webp?v=117921",
+      "rating": "3.3"
+    },
+    {
+      "name": "Vino Nieto Senetiner Malbec 750ml",
+      "precio": "665,00",
+      "descripcion": "Apto para guarda de unos 3 años. Decantar por espacio de una hora. La temperatura adecuada para disfrutar este vino es entre 16º y 18º C. Ideal para carnes rojas grilladas, pastas con salsas rojas, cerdo, aves de caza, locro, chivito al asador y quesos semicurados.",
+      "categoria": "vinos",
+      "graduacion de alcohol": "14,4%",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/VINO-NIETO-SENETINER-MALBEC-750ML_81f4d1_14898_500x.jpg?v=1622314641",
+      "rating": "4.1"
+    },
+    {
+      "name": "Vino Medalla Trapiche Malbec 750ml",
+      "precio": "$1128,00",
+      "descripcion": "En boca se lo encuentra carnoso, de buen volumen y percibiéndose untuoso. Se destacan sus sabores a frutas maduras, con notas especiadas, con un agradable y persistente final",
+      "categoria": "vinos",
+      "graduacion de alcohol": "14 %",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/VINO-TINTO-MALBEC-MEDALLA-TRAPICHE-UNIDAD_07e19a_13971_500x.jpg?v=1626966972",
+      "rating": "4.5"
+    },
+    {
+      "name": "Vino Cafayate Malbec 750ml",
+      "precio": "$321,00",
+      "descripcion": "Vino elaborado 100% con uvas seleccionadas de malbec y criado en barricas de roble durante 6 meses. Aromas a ciruelas maduras , violetas con final suave y tostado. Taninos dulces y maduros",
+      "categoria": "vinos",
+      "graduacion de alcohol": "12 %",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/VINO-TINTO-CAFAYATE-MALBEC-750ML-UNIDAD-_203689_14030_500x.jpg?v=1626962782",
+      "rating": "3.7"
+    },
+    {
+      "name": "Vino Los Intocables Black Malbec 750ml",
+      "precio": "$707,00",
+      "descripcion": "En boca, el tostado medio, aporta sabores a vainilla y a mermelada de frutos rojos cocidos, como las moras y las ciruelas.",
+      "categoria": "vinos",
+      "graduacion de alcohol": "13,5 %",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/VINO-LOS-INTOCABLES-BLACK-MALBEC-750ML_0f8063_15015_500x.jpg?v=1626964991",
+      "rating": "4.2"
+    },
+    {
+      "name": "Vino Rutini Malbec 750ml",
+      "precio": "$2.479,00",
+      "descripcion": "Apto para guarda de unos 6 años. Decantar por espacio de una hora para su consumo. La temperatura adecuada para disfrutar este vino es entre 16º y 18º C. Este Malbec es ideal para combinarlo con carnes vacunas grilladas y horneadas, aves asadas, pastas con salsas cárnicas, pescados de río.",
+      "categoria": "vinos",
+      "graduacion de alcohol": "13,5 %",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/VINO-RUTINI-MALBEC-750ML_4791d6_14807_500x.jpg?v=1627075265",
+      "rating": "4.8"
+    },
+    {
+      "name": "Vino Dv Catena Malbec 750ml",
+      "precio": "$2.714,00",
+      "descripcion": "Apto para guarda de unos 10 años, se aconseja decantar el vino por una hora antes ser degustado. La temperatura adecuada para su consumo es entre 16º y 18º C. Ideal para acompañar quesos blandos, semiblandos, fiambres mediterráneos y carnes bien condimentadas.",
+      "categoria": "vinos",
+      "graduacion de alcohol": "14 %",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/VINO-TINTO-DV-CATENA-MALBEC-750ML-UNIDAD_b76193_13976_500x.jpg?v=1626963256",
+      "rating": "4.1"
+    },
+    {
+      "name": "Whisky White Horse 750ml",
+      "precio": "$931,00",
+      "descripcion": " White Horse, es un blend 8 años de más de 35 whiskies de malta y grano, siendo su corazón 3 single malts: Lagavulin, Craigellachie y Glen Elgin. Sobresale por la forma singular de su botella, su etiqueta tradicional y su nombre, recibido de una histórica posada de Edimburgo fundada en 1742.Con un bouquet muy sutil, las notas mas sobresalientes recuerdan directamente al roble, luego se aprecian terrosas, algo animales, minerales y aceitosas, sin que sea un espectro de notas muy atractivoIncluye: - 1 Botella de Whisky White Horse 750ml (no incluye estuche)",
+      "categoria": "whisky",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386132452/01_1600448900.webp?v=117921",
+      "rating": "4"
+    },
+    {
+      "name": "Whisky Vat 69 Vat69 Apple Vibe 700ml",
+      "precio": "$610,00",
+      "descripcion": "Las barricas utilizadas para el envejecimiento de los whiskies de VAT 69 todavía se eligen con el mismo cuidado que mantenía William Sanderson, su fundador en 1882. Los whiskies son madurados en barricas, que fueron previamente utilizadas para bourbon americano o jerez español.Especificaciones:- Contenido de alcohol: 29 % - País de origen: Escocia- Volumen: 700 ml - Cosecha: NV Contenido:- 1 Whisky VAT 69 Apple Vibe 700ml",
+      "categoria": "whisky",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/WHISKY-VAT-69-VAT69-APPLE-VIBE-700ML_3d694c_36432_500x.jpg?v=1627083528",
+      "rating": "4"
+    },
+    {
+      "name": "Johnnie Walker Red 750 ml",
+      "precio": "$2.115,00",
+      "descripcion": "Johnnie Walker Red Label.a mezcla es en parte arte y en parte ciencia. Es una habilidad de la Familia Walker desarrollada a lo largo de muchas generaciones. Etiqueta roja, con su combinación de whiskies claros de la oscura costa este de Escocia y whiskies de la punta de la costa oeste, creó una mezcla con una extraordinaria profundidad de sabor. El sabor viaja en toda su paladar para ofrecer una experiencia que ni siquiera otros whiskies no ordinarios pueden igualar. El carácter del whisky se define por una intensa, picante y marcada sensación de sabores. Una ráfaga de etiqueta roja golpea el paladar con la frescura del agua de una ola al estrellarse, seguido por el sabor de las especias aromáticas y, finalmente, un largo y persistente, acabado humeante. La sensación en la boca es compleja - 'picante dulce' es una buena descripción de este gusto y la sensación de hormigueo en la lengua. Especificaciones:• CATEGORÍA: Whiskys• PRODUCTOR: Johnnie Walker",
+      "categoria": "whisky",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386131262/01_1600809684.webp?v=117921",
+      "rating": "4"
+    },
+    {
+      "name": "Whisky Wild Turkey Bourbon 40 750ml",
+      "precio": "$3.931,00",
+      "descripcion": "Whisky Wild Turkey Bourbon 750ml.El Wild Turkey es un Kentucky Straight Bourbon Whiskey. Wild Turkey es una marca de whisky bourbon producida desde 1940 por la destilería del mismo nombre en Lawrenceburg (Kentucky), Estados Unidos. Especificaciones:• Grado de alcohol: 40%• Contenido neto: 750cc• Zona de elaboración: Estados UnidosIncluye:• 1 Botella de Whiskey Wild Turkey Bourbon 750ml.Contás con la garantía de una empresa legalmente establecida",
+      "categoria": "whisky",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386132455/01_1600448824.webp?v=117921",
+      "rating": "4"
+    },
+    {
+      "name": "Whiskys Bruichladdich Port Charlotte Single Malt 10 700ml",
+      "precio": "$8.258,00",
+      "descripcion": "WHISKY WHYTE & MACKAY 13 AÑOS 700 ML Nota de cata: La nariz es bastante rica y bien equilibrada. Hay notas de roble y resina, un toque de cáscaras secadas y oloroso, un poco de dulzura melosa. El paladar es bastante grueso con una buena sensación en la boca. Hay notas de miel y jerez y un poco de humo. El acabado es de buena longitud. Especificaciones • Productor: Whyte & Mackay• Grado de alcohol: 40% • Contenido neto: 700ml• Zona de elaboración: EscociaIncluye:• 1 WHISKY WHYTE & MACKAY 13 AÑOS 700 ML",
+      "categoria": "whisky",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/WHISKY-WHYTE-MACKAY-13-A-OS-700ML_1f8cdd_23483_600x.jpg?v=1622305914",
+      "rating": "4"
+    },
+    {
+      "name": "Whisky Whyte & Mackay Triple Matured 700ml",
+      "precio": "$3.263,00",
+      "descripcion": "Whisky Whyte & Mackay Triple Matured 700cc. Notas de Cata • Color: Reflejos dorados. • Nariz: Completo y redondo. • Sabor: Frutas suaves melosas. • Alcohol: 40%. • Origen: Esocia.",
+      "categoria": "whisky",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/WHISKY-WHYTE-MACKAY-TRIPLE-MATURED-700ML_b1e4c7_21795_324x.jpg?v=1627083545",
+      "rating": "3"
+    },
+    {
+      "name": "Whisky Jack Daniels 750ml",
+      "precio": "$6.532,00",
+      "descripcion": "También podés retirar de Lunes a Sábados de 09 a 22hs. Whisky Jack Daniels Nro 7 Botella Jack Daniel's®, el whiskey más vendido en el mundo, proviene de la destilería más antigua registrada más antigua en Estados Unidos, la Destilería Jack Daniel. Fundada en 1866 por Jasper Newton Daniel, mejor conocido como Mr. Jack Daniel en Lynchburg, Tennessee, donde después de más de 150 años se sigue haciendo cada gota de éste icónico whiskey. Jack Daniel's está hecho con la mejor malta de maíz, centeno y cebada. El proceso se realiza con agua del manantial de la cueva Spring Hollow que es libre de hierro, para después pasar por un filtro de carbón de maple cuyo resultado reposa en barricas de roble blanco americano, que son utilizadas solo una sola vez. La familia de Jack Daniel’s está conformada por: Jack Daniel’s Old No. 7, Jack Daniel’s Tennessee Honey, Jack Daniel’s Gentleman Jack, Jack Daniel’s Single Barrel, algunas Ediciones Especiales y los Jack Daniel’s Ready to Drink,. Jack Daniel's es una marca que pertenece a Brown-Forman Corporation y que cotiza públicamente en el New York Stock Exchange (NYSE). Especificaciones: • Productor: Jack Daniels • Corte: Tennessee Whiskey • Grado de alcohol: 35% • Lugar de elaboración: Tennessee, Estados Unidos. • Contenido neto: 750ml Incluye • 1 Botella de Whisky Jack Daniels Nro 7 750ml.",
+      "categoria": "whisky",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386131235/01_1600807334.webp?v=117921",
+      "rating": "5"
+    },
+    {
+      "name": "Whiskey Jack Daniels Fire 750ml",
+      "precio": "$2.115,00",
+      "descripcion": "Jack Daniel's Fire es un whisky americano de Tennessee. Está compuesto por una base de Jack Daniel's Old Nº7 infusionado con licor de canela roja. La diferencia más notable es que el whisky Tennessee es filtrado en carbón de arce sacarino, dándole un sabor y aroma distintivos.",
+      "categoria": "whisky",
+      "graduacion de alcohol": "35%",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/WHISKEY-JACK-DANIELS-FIRE-750ML_d10f0b_35711_400x.jpg?v=1622248788",
+      "rating": "4"
+    },
+    {
+      "name": "Whisky Jack Daniels Honey 750ml",
+      "precio": "$5.532,00",
+      "descripcion": "Whisky Jack Daniels Honey Miel Experimenta el sabor con el Whisky Jack Daniel´s Honey 750 ml, que te va a encantar. Conservando el sello original de Jack Daniel´s, marca que lo respalda, esta presentación te va a sorprender con su innovador y exquisito toque de miel que despertará todos tus sentidos. Reconócelo por su botella transparente y tapón dorado.  Entre sus principales características el Whisky Jack Daniel´s Honey destaca por su auténtico toque de miel. Además de que su maridaje te permite beberlo congelado en un shot, mezclado con agua mineral o refresco. Originario de Estados Unidos, fue la región de Tennessee la que lo vio nacer. Cuenta con un volumen de alcohol de 35%. La nota de cata indica que es color cristalino amarillo a la vista, en la nariz se percibe miel y vainilla en tanto que a la boca llega dulce al inicio con notas de nuez y frutos secos al final. Especificaciones: • Productor: Jack Daniels • Corte: Tennessee Whiskey | Licor de Miel • Grado de alcohol: 35% • Lugar de elaboración: Tennessee, Estados Unidos. • Contenido neto: 750ml Incluye: • 1 Whisky Jack Daniels Honey Miel 750ml",
+      "categoria": "whisky",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386131237/01_1623156690.webp?v=117921",
+      "rating": "5"
+    },
+    {
+      "name": "Whisky Maker Mark 750ml",
+      "precio": "$5.704,00",
+      "descripcion": "Whiskey Makers Mark Bourbon 750 cc • Color: Rico y brillante –ambarino traslúcido, pero con un ligero resplandor naranja que indica la calidez que sentirá al saborear. • Aroma: Intenso, pero delicado; bien balanceado; característico aroma de caramelo debido al roble chamuscado con un toque de vainilla; grato y atractivo.• Sabor: Sabor intenso, pero suave al paladar. Característico y complejo, pero con el refinamiento y equilibrio de cognac o una malta de fina elaboración. Refrescante y agradable • Grado de alcohol: 45% • Contenido neto: 750cc • Zona de elaboración: Estados Unidos Incluye: • 1 Botella de Whiskey Makers Mark Bourbon 750cc.",
+      "categoria": "whisky",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386131308/01_1600813382.webp?v=117921",
+      "rating": "3"
+    },
+    {
+      "name": "Vodka Smirnoff 700ml",
+      "precio": "$580,00",
+      "descripcion": "- Acerca del producto: Vodka Smirnoff.El vodka Smirnoff Red es un producto de gran suavidad y versatilidad, caracterizado por una enorme neutralidad, que lo convierten en una bebida espirituosa ideal para mezclar.-Especificaciones: • CATEGORÍA: Destilados • PRODUCTOR: Smirnoff   • TIPO: Vodka         • CORTE: Vodka   • ALCOHOL: 37,5%   • LUGAR DE ELABORACIÓN: Argentina.  • CONTENIDO: 700ml  incluye:   • Vodka Smirnoff. 700ml",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386132406/01_1600877049.webp?v=117921",
+      "rating": "5"
+    },
+    {
+      "name": "Vodka Skyy 750ml",
+      "precio": "$637,00",
+      "descripcion": "Vodka Skyy Clasico Original  Este vodka super premio está elaborado con grano de primera calidad. El exclusivo proceso de Skyy consiste en su cuádruple destilación o triple filtración y garantiza un pureza excepcional.Crea grandes y refrescantes cocteles, conviértete en el mejor barman de la fiesta con el Vodka SKYY de 750 ml. SKYY es uno de los primeros vodkas hechos de granos y agua estadounidenses, además de su destilación cuádruple patentada y de su proceso de triple filtración. El sabor que este vodka proporciona es el de un cuerpo seco y mediano con una agradable sensación cremosa con notas de anís, cilantro con un ligero toque de pimienta. Al olfato es cítrico y especiado con el cual se crea un líquido premiado, suave, crujiente sin cambios por más de 20 años. Especificaciones:• Contenido: 750ml• Vol / Alc: 40%• País de origen: EE. UU. • Marca: Skyy -Incluye:• 1 Vodka Skyy Clasico 750ml.",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386132403/01_1600876756.webp?v=117921",
+      "rating": "4"
+    },
+    {
+      "name": "Vodka Absolut Blue 750ml",
+      "precio": "$1.850,00",
+      "descripcion": "El primero de todos los Absolut, producido en 1979. Modo de consumo: Puro, con hielo o en tragos.• Elaboración: Tipo de elaboración: Destilación continua. Descripción: Es producido del trigo de invierno, un grano de trigo robusto que da su carácter de grano liso al vodka. Cada año aproximadamente 80,000 toneladas son usadas para producir el Vodka Absolut. -Especificaciones: • Categoría: Destilados• Productor: Absolut • Tipo: Vodka• Corte: Vodka• Alcohol: 40% • Lugar De Elaboración: Ahus, S Ahus, Suecia.   Incluye:• 1 Botella Absolut Azul 750ml",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/16003861298/01_1600441317.webp?v=117921",
+      "rating": "5"
+    },
+    {
+      "name": "Vodka Wyborowa 750ml",
+      "precio": "$743,00",
+      "descripcion": "El Vodka Wyborowa tiene más de 500 años en fabricación. El grano de Centeno puro combinado con nuestras técnicas tradicionales en destilación, le da a Wybo su suavidad excepcional. La calidad de Wybo se ve resaltada en los 30 (o más) premios internacionales que ha recibido desde su origen. Exportado desde Polonia- la casa del vodka. Wyborowa ? El Orgullo de Polonia desde 1927.",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386132456/01_1600448625.webp?v=117921",
+      "rating": "4"
+    },
+    {
+      "name": "Grey Goose 750ml",
+      "precio": "$7.363,00",
+      "descripcion": "Grey Goose es el fruto de una voluntad inquebrantable de crear un vodka único. En cada botella se encuentra la esencia de los mejores ingredientes de Francia: trigo blando de invierno, procedente de la Picardía, y agua pura de manantial de Gensac, en la región de Cognac. Estos elementos pasan del campo a la botella en un proceso muy cuidado y delicado, diseñado y supervisado gracias al compromiso y a los extraordinarios conocimientos de nuestro Maître de Chai François Thibault.",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386131211/01_1600800286.webp?v=117921",
+      "rating": "5"
+    },
+    {
+      "name": "Vodka Walker 1 Litro",
+      "precio": "$526,00",
+      "descripcion": "Su color es transparente y brillante. Su aroma es herbáceo, con olor a naranja, enebro característico y fresco. Y su gusto herbáceo y con una sensación ligeramente dulce y ardiente. Modo de consumo: Solo, con hielo, con gaseosa coca-cola,con agua tonica y limon.",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386131226/01_1600802746.webp?v=117921",
+      "rating": "2"
+    },
+    {
+      "name": "Vodka Sernova 700ml",
+      "precio": "$540,00",
+      "descripcion": "Fratelli Branca amplía su portfolio de marcas y lanza al mercado Sernova, un vodka de estilo italiano, elegante y delicado, cuyo nombre conlleva el lema de Fratelli Branca destilerías: Novare Serbando.El proceso de producción de Sernova consta de siete destilaciones y tres filtraciones, durante las cuales se refina y perfecciona, explicó el brand ambassador de Fernet Branca Argentina, el bartender Martín Olivera. Además, resaltó, para su proceso de filtrado emplea diamantes negros para asegurar un producto neutro y puro. Es puro en su transparencia y luminosidad. En nariz se perciben las notas derivadas de granos de cereal y en boca tiene un sabor redondo, envolvente, sedoso y equilibrado. Para apreciar las notas aromáticas es preferible saborearlo puro con hielo, para tener una experiencia única y refrescante.",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386132399/01_1600876363.webp?v=117921",
+      "rating": "2"
+    },
+    {
+      "name": "Vodka Absolut Elyx 1 Litro",
+      "precio": "$7.211,00",
+      "descripcion": "Absolut Elyx es un vodka de lujo cuya elaboración se basa en los principios de la calidad, la integridad y la artesanía, y con una destilación manual en alambique de cobre que se remonta a 1921. El resultado es un vodka galardonado con premios y dotado de un rico y suave sabor. Lo llamamos seda líquida. Perfecto para preparar martinis e incluso para tomarlo solo con hielo.",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1611837725/01_1611837725.webp?v=117921",
+      "rating": "5"
+    },
+    {
+      "name": "Vodka Ketel One 750ml",
+      "precio": "$2.400,00",
+      "descripcion": "Aroma: Toques cítricos y miel. Sabor: Fresco, crujiente. Recubre generosamente la lengua. Permanece un animado cosquilleo en el final.",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1600386131272/01_1600810994.webp?v=117921",
+      "rating": "4"
+    },
+    {
+      "name": "Vodka Bolskaya 700ml",
+      "precio": "$438,00",
+      "descripcion": "Especificaciones: CATEGORÍA: Vodka. PRODUCTOR: Bols. LUGAR DE ELABORACIÓN: Argentina.",
+      "categoria": "vodka",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/VODKA-BOLSKAYA-1000ML_4b2e1b_29332_241x.jpg?v=1622271608",
+      "rating": "4"
+    },
+    {
+      "name": "Pack X6 Lata Imperial Lager Rubia 473ml",
+      "precio": "$717,00",
+      "descripcion": "Imperial Lager, la cerveza rubia especial. Con un aroma frutado, un atractivo color dorado y un inconfundible sabor fresco e intenso. Elaborada a partir de una cuidadosa selección de ingredientes 100% naturales, pasión y cuidado logrando una cerveza única de calidad premium.-Especificaciones: • Variedad de maltas: Pilsen• Amargor: IBU 15• Color: Dorado intenso• Graduación alcohólica: 5,5% Vol. • Temperatura de servido: 2°C a 6°C• Presentación: Lata • Contenido neto: 473ml",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/PACK-X6-CERVEZA-IMPERIAL-LAGER-RUBIA-473ML-_7b6760_34849_600x.jpg?v=1622251892",
+      "rating": "3"
+    },
+    {
+      "name": "Pack X6 Lata Imperial Golden Lager 473ml",
+      "precio": "$732,00",
+      "descripcion": "Imperial Golden Edición Limitada. Imperial Golden, una cerveza con sabor equilibrado, ligera y fácil de tomar. Una lager ideal para esos momentos en los que querés disfrutar de un sabor más suave sin resignar calidad y sabor. -Especificaciones:Temperatura de servido: 2°C a 6°C. Presentación: Lata Contenido neto: 473ml Zona de elaboración: Argentina Incluye: 6 Latas Imperial Golden Edición Limitada 473ml.",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/PACK-X6-CERVEZA-IMPERIAL-GOLDEN-LAGER-RUBIA-LATA-473ML_8e39b2_34850_600x.jpg?v=1626099572",
+      "rating": "2"
+    },
+    {
+      "name": "Pack X6 Cerveza Patagonia Amber Lager 473ml",
+      "precio": "$978,00",
+      "descripcion": "Cerveza Patagonia Amber Lager-Nota de Cata:Color: Ligero ámbar rojizo, de claridad brillante. Aroma: Tostado ligero, por sus finas maltas. Sabor: Cerveza con cuerpo pero a la vez delicada, de amargor apacible que permite dar a luz a un caramelo tostado delicioso.-Especificaciones:• CATEGORÍA: Cervezas• PRODUCTOR: Patagonia• TIPO: Nacional• CORTE: Roja | Lager• LUGAR DE ELABORACIÓN: Valle del Río Negro. Provincia de Río Negro, Argentina.• TEMPERATURA DE SERVICIO: 6º a 8º C• PAÍS: Argentina-Incuye:• 6 Cervezas Patagonia Amber Lager. 473ml",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/PACK-X6-CERVEZA-PATAGONIA-AMBER-LAGER-473ML_2d76e3_33239_600x.jpg?v=1622258994",
+      "rating": "4"
+    },
+    {
+      "name": "Pack X6 Cerveza Heineken Original Pure Malt Lager Porron 330",
+      "precio": "$774,00",
+      "descripcion": "Tambien podés retirar de Lunes a Sábados de 09 a 20hs. Si sos del interior, realizamos envíos super express a todo el país garantizados.Cerveza Heineken Original Porrón 330ml En 1873 un joven empresario llamado Gerard Heineken descubrió su pasión por la elaboración de cerveza. Así fue que compró una parcela de tierra, en lo que es hoy el centro de Ámsterdam, construyó una cervecera y perfeccionó la receta que pronto se convertiría en la primera cerveza lager “premium” de Holanda. Pronto se corrió la voz y el nombre Heineken, estampado en cada botella individual, se convirtió en un símbolo nacional de calidad. En los siguientes 140 años su cervecera se expandió y los hijos y nietos de Gerard exploraron nuevos mundos, pero el nombre en la botella siguió siendo el mismo. Todavía hoy, cuatro generaciones después, sus descendientes tienen la pasión de elaborar una verdadera cerveza premium. Después de todo, cuando el nombre de nuestra familia está en juego, siempre nos preocupamos un poco más. Características: • Productor: Heineken• Grado de alcohol: 5,3%• Corte: Malt Lager• Contenido neto: 330cc • Presentación: Porrón.• Unidades: 6• LO MÁXIMO POR ENVÍO -A TRAVÉS DE MERCADO ENVÍOS- ES DE 25 KILOS.",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/CAJA-X6-CERVEZA-HEINEKEN-ORIGINAL-PURE-MALT-LAGER-PORRON-330_86c120_28645_700x.jpg?v=1622276314",
+      "rating": "4"
+    },
+    {
+      "name": "Pack X6 Cerveza Corona Porron 710ml",
+      "precio": "$1.595,00",
+      "descripcion": "Cerveza CoronaEs una cerveza de tipo pilsener que comenzó a elaborarse en el año 1925. Esta cerveza de México la produce, como bien hemos comentado antes, Grupo Modelo. El 49% de esta compañía cervecera pertenece desde 2012 a la empresa belgo-brasileña AB InBev. Grupo Modelo fue creado por el español Braulio Iriarte y Cerveza Corona fue su segunda marca. Cerveza Corona utilizó el ritual creado alrededor de su marca para fidelizar a sus clientes. Este ritual es muy famoso y hace que exista una clara diferenciación de la marca frente a la competencia “Cerveza Corona… la del limón”. Especificaciones: • CATEGORÍA: Cervezas• PRODUCTOR: Corona• TIPO: Importada• CORTE: Rubia | Lager• ALCOHOL: 4,5%• LUGAR DE ELABORACIÓN: México.• ELABORACIÓN: Estilo: American Adjunct Lager. Fermentación: Lager.• PAÍS: México Incluye• 6 Cervezas Corona Porrón 710ml.",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/PACK-X6-CERVEZA-CORONA-PORRON-710ML_82a2cc_33286_700x.jpg?v=1622258923",
+      "rating": "5"
+    },
+    {
+      "name": "Pack X6 Cerveza Stella Artois Petite Premium Lager 269ml",
+      "precio": "$532,00",
+      "descripcion": "Cerveza Stella Artois Petite Premium Lager. Tiene un sabor sutil, Stella Artois proviene de la mezcla de la mejor malta y las mejores variedades de lúpulo. Utilizando sólo ingredientes naturales que garantiza una lager fresca, de alta calidad con un ligero sabor amargo. -Especificaciones:• CATEGORÍA: Cervezas • PRODUCTOR: Stella Artois • TIPO: Nacional • CORTE: Otros | Lager• ALCOHOL: 5%• LUGAR DE ELABORACIÓN: Argentina.• ELABORACIÓN• Estilo: Euro Pale Lager. Fermentación: Lager. • PAÍS: Bélgica -Incuye:• 6 Cervezas Stella Artois Petite Premium Lager. 269ml",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/PACK-X6-CERVEZA-STELLA-ARTOIS-PETITE-PREMIUM-LAGER-269ML_5777fd_33250_700x.jpg?v=1622258959",
+      "rating": "3"
+    },
+    {
+      "name": "Pack X4 Lata Schneider Lager Rubia 710ml",
+      "precio": "$636,00",
+      "descripcion": "Cerveza Schneider Lager.Cerveza rubia refrescante al mismo tiempo que sabrosa. Balance perfecto entre su color, amargor, espuma y alcohol.-Especificaciones: • CATEGORÍA: Cervezas• PRODUCTOR: Schneider• TIPO: Nacional• CORTE: Otros | Lager• ALCOHOL: 4,7%• LUGAR DE ELABORACIÓN: Provincia de Santa Fé, Argentina.• ELABORACIÓN: Elaboración con ingredientes totalmente naturales: agua, cebada malteada, cereales no malteados y lúpulo.• PAÍS: Argentina-Incluye:• 4 Cervezas Schneider Lager 710ml Lata",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/PACK-X4-CERVEZA-SCHNEIDER-LAGER-RUBIA-LATA-710ML_ac57a0_34796_700x.jpg?v=1626099435",
+      "rating": "3"
+    },
+    {
+      "name": "Pack X24 Cerveza Quilmes 473ml",
+      "precio": "$2.738,00",
+      "descripcion": "Cerveza lager argentina, elaborada con ingredientes nacionales. Con equilibrio entre el suave amargor del lúpulo y el sabor del cereal. Color amarillo dorado brillante.Es una cerveza equilibrada, de gran refrescancia y cuerpo balanceado, que marida con platos más bien grasosos o pesados. La gasificación de esta cerveza barre el paladar manteniendo las notas de sabores en la boca, y su gran refrescancia invita a comer acompañando siempre con la bebida.Especificaciones:• Marca: Quilmes• Graduación alcohólica: 4.8%• Amargor IBU: 15 • Temperatura ideal: 3 °C• Maridaje: Tostado clásico, milanesa con papas fritas, pizza de jamón y morrones.• Presentación: Lata• Contenido neto: 473 ml• Origen: Argentina. • Unidades: 24",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://www.fullescabio.com/productos/1622738586/01_1622738586.webp?v=117921",
+      "rating": "3"
+    },
+    {
+      "name": "Pack X6 Cerveza Patagonia Kune 473ml",
+      "precio": "$978,00",
+      "descripcion": "Cerveza Patagonia Küné -MARIDAJE IDEAL:Por sus maltas caramelo, usadas en la elaboración, hace realzar sabores caramelizados en platos de pescados y carnes grilladas.-Especificaciones:• Marca: KÜNÉ• ABV 5%• APARIENCIA: Color bronce claro• AROMA: Cítrico y leve herbal del lúpulo Mapuche.• SABOR: Amargo suave con notas leves a caramelo de la malta.• TEMPERATURA: 5º • MALTAS USADAS: Pilsen y CararedLÚPULOS USADOS: Victoria y Mapuche-Incuye:• 6 Cervezas Patagonia Küné. 473ml",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/PACK-X6-CERVEZA-PATAGONIA-KUNE-473ML_ec9229_33246_700x.jpg?v=1622258975",
+      "rating": "3"
+    },
+    {
+      "name": "Pack X6 Cerveza Miller Lata 473ml",
+      "precio": "$844,00",
+      "descripcion": "Cerveza Americana de tipo Lager, suave y fácil de beber.De contenido alcohólico moderado, solo un 4,7% y combinado con su punto amargo, hacen que esta cerveza sea una de las más refrescantes dentro de su segmento. Utiliza su proceso de elaboración un tipo de cebada denominada Spring, que hace posible el proceso propio de filtrado a baja temperatura. Al utilizar burbujas de mayor densidad, la espuma se vuelve mucho más duradera y cremosa. Especificaciones:• Marca: Miller• Estilo: Lager• Graduación Alcohólica: 4,7º• Color: Rubia• Contenido neto: 473 ml• Origen: Estados Unidos.• LO MÁXIMO POR ENVÍO -A TRAVÉS DE MERCADO ENVÍOS- ES DE 24 LATAS.",
+      "categoria": "cerveza",
+      "graduacion de alcohol": "",
+      "imagen": "https://cdn.shopify.com/s/files/1/0557/2093/5599/products/CAJA-X6-CERVEZA-MILLER-LATA-473ML_54b94d_29526_700x.jpg?v=1622270997",
+      "rating": "3"
+    }
+  ]
+}

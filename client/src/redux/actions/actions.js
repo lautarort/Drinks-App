@@ -5,6 +5,7 @@ import {
     GET_CATEGORIES,
     SET_PAGE,
     SET_CATEGORY,
+    ADD_PRODUCT_TO_CART,
     // FILTER_CERVEZA, 
     // FILTER_DESTILADOS, 
     // FILTER_ESPUMANTES, 
@@ -39,6 +40,7 @@ export const getProductsDetails = (id) => async (dispatch) => {
         console.log(error);
     }
 };
+
 
 export const getCategories = () => async (dispatch) => {
     try {
