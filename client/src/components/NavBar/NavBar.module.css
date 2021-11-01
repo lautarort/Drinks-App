@@ -5,18 +5,18 @@
   overflow: hidden;
   height: 110px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
 }
 
 
+
 .imgIcono {
-  height: 140px;
+  height: 150px;
+  width: 200px;
+
 }
-
-
-
 
 .ctnRegis{
   display: flex;
