@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import img1 from './img/img1.png';
 import img2 from './img/img2.png';
+import img3 from './img/img3.png';
 import style from './CarouselCombo.module.css';
 import { Link } from 'react-router-dom'
 
@@ -37,13 +38,13 @@ const CarouselCombo = () => {
             <Carousel.Item className={style.ctn}>
                 <img
                     className="d-block w-100"
-                    src={img2}
+                    src={img3}
                     alt="Third slide"
                 />
 
                 <Carousel.Caption className={style.ctntxt}>
-                    <h1>Third slide label</h1>
-                    <p className={style.txt}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h1>Whisky</h1>
+                    <p className={style.txt}>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     <button className={style.btn}>Entra </button>
                 </Carousel.Caption>
             </Carousel.Item>

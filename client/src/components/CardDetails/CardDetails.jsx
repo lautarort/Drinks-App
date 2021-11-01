@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProductsDetails } from '../../redux/actions/actions';
+import { getProductsDetails, unmountGet } from '../../redux/actions/actions';
 import { useState } from 'react';
 import style from './CardDetails.module.css';
 import Rating from '../Rating/Rating';
@@ -15,6 +15,9 @@ function CardDetails(props) {
 
     useEffect(() => {
         dispatch(getProductsDetails(id));
+        return () => {
+            dispatch(unmountGet());
+        };
     }, [dispatch, id]);
 
     const [count, setCount] = useState(1);

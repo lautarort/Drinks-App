@@ -3,6 +3,7 @@ import {
     GET_PRODUCTS_DETAILS,
     GET_PRODUCTS,
     GET_CATEGORIES,
+    UNMOUNT_GET,
     SET_PAGE,
     SET_CATEGORY,
     RATE_PRODUCT,
@@ -54,7 +55,7 @@ export const getCategories = () => async (dispatch) => {
     }
 };
 
-
+export const unmountGet = () => ({ type: UNMOUNT_GET });
 
 export const setPage = (page) => {
     return {
