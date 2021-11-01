@@ -1,0 +1,42 @@
+/* .ctnMayor {
+
+} */
+
+.modal {
+  position: absolute;
+  top: 400px;
+  left: 700px;
+  right: 700px;
+  bottom: 400px;
+  background-color: rgb(0, 0, 0);
+  overflow: auto;
+  outline: none;
+  padding: 20px;
+}
+
+.ctnText{
+  color: #ffffff;
+  text-align: center;
+}
+
+.ctnBtns {
+  display: flex;
+}
+
+.btn {
+  margin: 0 auto;
+  padding: 0.5em 1.5em;
+  border: 0;
+  color: white;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+  background-color: #000000;
+  border-radius: 0.35em;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.904);
+  color: rgb(0, 0, 0);
+}
