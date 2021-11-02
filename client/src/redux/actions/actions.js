@@ -7,6 +7,9 @@ import {
     SET_PAGE,
     SET_CATEGORY,
     RATE_PRODUCT,
+    ADD_CART,
+    GET_CART,
+    DELETE_CART_ITEM
     // FILTER_CERVEZA, 
     // FILTER_DESTILADOS, 
     // FILTER_ESPUMANTES, 
@@ -83,3 +86,24 @@ export const rateProduct = ({ number, id }) => async (dispatch) => {
         console.log(error)
     }
 }
+
+export const addCart = (payload) => {
+    return {
+        type: ADD_CART,
+        payload
+    }
+}
+
+export const getCart = () => {
+    return {
+        type: GET_CART
+    }
+  };
+
+
+export const deleteCartItem  = (id) =>{
+    return {
+        type: DELETE_CART_ITEM,
+        payload: id
+    }
+} 

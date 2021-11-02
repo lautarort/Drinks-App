@@ -14,6 +14,11 @@ const UNMOUNT_GET = 'UNMOUNT_GET';
 const SET_PAGE = "SET_PAGE";
 const SET_CATEGORY = "SET_CATEGORY";
 
+//CARRITO
+const ADD_CART ="ADD_CART";
+const GET_CART ="GET_CART";
+const DELETE_CART_ITEM= "DELETE_CART_ITEM";
+
 // ORDER
 
 module.exports = {
@@ -24,4 +29,7 @@ module.exports = {
     SET_PAGE,
     SET_CATEGORY,
     RATE_PRODUCT,
+    ADD_CART,
+    GET_CART,
+    DELETE_CART_ITEM
 }
