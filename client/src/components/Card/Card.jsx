@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState} from 'react';
 import style from './Card.module.css';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import img from '../../Iconos/image-default-Card.jpeg';
 import Rating from '../Rating/Rating';
+import { addCart } from "../../redux/actions/actions.js";
 
 const Card = (prod) => {
     let p = prod.prod
-    // console.log('prod', prod.prod.name);
+    console.log(p);
+    const cart=useSelector(state => state.cart);
+    const dispatch=useDispatch();
+    
+    function onClick(payload) {
+        dispatch(addCart(payload));
+    }
 
     function addDefaultSrc(ev) {
         ev.target.src = img;
@@ -27,9 +35,9 @@ const Card = (prod) => {
                     <p className={style.precio}>{p.precio}</p>
                 </div>
             </Link>
-
+            
             <div >
-                <button className={style.btn}>Agregar al carrito</button>
+                <button onClick={()=> onClick(p)} className={style.btn}>Agregar al carrito</button>
             </div>
         </div>
     );

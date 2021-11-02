@@ -9,5 +9,5 @@ mongoose
  		useNewUrlParser: true,
 	})
 	.then(db => console.log(` |> database connected: ${db.connection.name}`))
-	.catch(err => console.log(error));
+	.catch(err => console.log(err));
 	//hola

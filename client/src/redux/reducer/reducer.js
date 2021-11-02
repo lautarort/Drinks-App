@@ -1,4 +1,4 @@
-import { GET_PRODUCTS, GET_CATEGORIES, UNMOUNT_GET, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS } from "../actions/const";
+import { GET_PRODUCTS, GET_CATEGORIES, UNMOUNT_GET, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS, ADD_CART, GET_CART, DELETE_CART_ITEM } from "../actions/const";
 import { sliceArray } from "./sliceArray";
 
 const initialState = {
@@ -52,6 +52,23 @@ function reducer(state = initialState, action) {
                 ...state,
                 category: action.payload
             }
+       case ADD_CART:
+            return {
+                ...state,
+                cart: state.cart.concat(action.payload)
+            }
+
+        case GET_CART:  
+            return {
+                ...state,
+                cart: state.cart
+            }
+
+        case DELETE_CART_ITEM: 
+            return {
+                ...state,
+                cart: state.cart.filter(x => x._id !== action.payload)
+            }    
         default:
             return state
     }
