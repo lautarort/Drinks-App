@@ -18,7 +18,7 @@ const Items = ({allProducts, cart, setCart, products}) => {
         setCart(item);
     }
 
-    //Función para confimar en el carrito
+    //Función para confirmar en el carrito
 
 
 

@@ -1,6 +1,6 @@
 //cart
 
-import Alcohol from "../../alcohol.png";
+/* 
 import React from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { getCart, deleteCartItem } from '../../redux/actions/actions';
@@ -48,10 +48,10 @@ const Carrito = () => {
 };
 
 export default Carrito;
-
+*/
 
 //actions
-
+/** 
 export const addCart = (payload) => {
     return {
         type: ADD_CART,
@@ -72,9 +72,9 @@ export const deleteCartItem  = (id) =>{
         payload: id
     }
 } 
-
+*/
 //reducer
-
+/** 
 case ADD_CART:
     return {
         ...state,
@@ -92,3 +92,4 @@ case DELETE_CART_ITEM:
         ...state,
         cart: state.cart.filter(x => x.id !== action.payload)
     }    
+    */
