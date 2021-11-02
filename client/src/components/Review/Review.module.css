@@ -1,6 +1,7 @@
 .btnEnviar {
-  width: 600px;
+  width: 1000px;
   margin-top: 15px;
+  margin-bottom: 20px;
   padding: 8px 3px;
   border: 0;
   color: rgb(255, 255, 255);
@@ -9,7 +10,6 @@
   font-size: 18px;
   letter-spacing: 1px;
   background-color: #000000;
-  border-radius: 0.35em;
   cursor: pointer;
 }
 .btnEnviar:hover {
@@ -22,16 +22,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0px;
-  width: 100%;
+  margin-top: 10px;
 }
 
 .textarea {
   border: 0.5px solid rgba(0, 0, 0, 0.849)0, 0, 0, 0.849;
-  border-radius: 0.35em;
-  width: 590px;
-  height: 100px;
-  margin-top: 12px;
+  width: 1000px;
+  height: 150px;
+  margin-top: 15px;
 }
 
 .titulo {
