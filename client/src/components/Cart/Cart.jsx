@@ -10,12 +10,15 @@ const Cart = () => {
     const cart = useSelector( state => state.cart);
     console.log(cart)
     
-
+    
     function totalCart(array) {
-        let total;
+        let total=0;
         for(var i=0; i<array.length; i++){
-            total= total + price(array[0].precio)
+            console.log(array[i].precio)
+            let neto= price(array[i].precio)
+            total= total + neto
         }
+        return total;
     }
 
     const delBebida = (id) => {
@@ -23,7 +26,6 @@ const Cart = () => {
         alert('Tu producto fue eliminado del carrito 👍')
         
     }
-
     function price(precio){
         let total;
         let splitprice= precio.split(",");
@@ -41,6 +43,8 @@ const Cart = () => {
         }
       return total;  
     }
+
+    
     useEffect(() => {
         dispatch(getCart());
 
@@ -56,15 +60,23 @@ const Cart = () => {
             cart.map(p => {
                 return(
             <Card
-            id={p.id}
+            id={p._id}
             name={p.name}
             image={p.imagen}
             rating={p.rating}
             precio={price(p.precio)}
 
             />
-        )}): <p>No hay Productos añadidos al carrito</p> }
-         </div> 
+        )}): <p></p> }
+         </div>
+         <div className={style.containerTotal}> 
+            <div className={style.preciFinal}>
+                <h1 className={style.total}>TOTAL: $ {totalCart(cart) }</h1>
+            </div>
+            <div>
+                <button className={style.btn}>PAGAR</button>
+            </div>
+         </div>
          </div>  
     );
 };

@@ -67,7 +67,7 @@ function reducer(state = initialState, action) {
         case DELETE_CART_ITEM: 
             return {
                 ...state,
-                cart: state.cart.filter(x => x.id !== action.payload)
+                cart: state.cart.filter(x => x._id !== action.payload)
             }    
         default:
             return state

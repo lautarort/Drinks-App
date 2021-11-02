@@ -87,9 +87,10 @@ export const rateProduct = ({ number, id }) => async (dispatch) => {
     }
 }
 
-export const addCart = (payload) => {
+export const addCart = (payload, cantidad) => {
     return {
         type: ADD_CART,
+        cantidad: cantidad,
         payload
     }
 }

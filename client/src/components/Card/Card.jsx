@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState} from 'react';
 import style from './Card.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -11,7 +11,7 @@ const Card = (prod) => {
     console.log(p);
     const cart=useSelector(state => state.cart);
     const dispatch=useDispatch();
-
+    
     function onClick(payload) {
         dispatch(addCart(payload));
     }
@@ -35,7 +35,7 @@ const Card = (prod) => {
                     <p className={style.precio}>{p.precio}</p>
                 </div>
             </Link>
-
+            
             <div >
                 <button onClick={()=> onClick(p)} className={style.btn}>Agregar al carrito</button>
             </div>

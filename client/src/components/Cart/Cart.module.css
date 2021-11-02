@@ -3,4 +3,22 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
+
+
+.total{
+  font-family:inherit;
+  margin-bottom: 50px;
+}
+
+
+.btn{
+  width: 66%;
+  height: 2rem;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+
+

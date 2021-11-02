@@ -22,9 +22,9 @@
 }
 
 
-.image{
-	height: 200px;
-  width: 100px;
+.img{
+	height: 40px;
+  width: 40px;
   object-fit: scale-down;
 
 }
