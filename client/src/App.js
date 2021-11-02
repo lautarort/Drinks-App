@@ -9,11 +9,10 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Pago from "./components/Pago/Pago.js"
 
+
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-      </header> */}
       <Route path='/' component={NavBar} />
       <Route exact path='/register' component={Register} />
       <Route exact path='/login' component={Login} />

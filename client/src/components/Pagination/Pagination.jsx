@@ -6,7 +6,7 @@ const Pagination = () => {
 
 	const itemsPerPage = 10;
 	const dispatch = useDispatch();
-	const { page, products, allProducts, category } = useSelector(state => state);
+	const { page, allProducts, category } = useSelector(state => state);
 
 	const changePage = (page) => {
 		dispatch(setPage(page))

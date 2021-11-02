@@ -1,3 +1,4 @@
+
 import React, {useEffect} from "react";
 import {Link} from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
@@ -20,12 +21,6 @@ const Cart = () => {
             total= total + neto
         }
         return total;
-    }
-
-    const delBebida = (id) => {
-        cart = cart.filter((product) => product.id !== id)
-        alert('Tu producto fue eliminado del carrito 👍')
-        
     }
     function price(precio){
         let total;
