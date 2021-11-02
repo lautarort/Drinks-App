@@ -1,16 +1,20 @@
 import React from 'react';
 import Cards from '../Cards/Cards';
 import Modal from '../Modal/Modal';
-import Pagination from "../Pagination/Pagination"; 
 import CarouselCombo from "../CarouselCombo/CarouselCombo"
+import { useSelector, useDispatch } from "react-redux";
 
 const Home = () => {
+    const dispatch = useDispatch();
+    const { modal } = useSelector(state => state);
+
     return (
         <div>
             <CarouselCombo />
-            <Modal />
+            {
+                !modal && <Modal />   
+            }
             <Cards />
-            <Pagination />
         </div>
     )
 };

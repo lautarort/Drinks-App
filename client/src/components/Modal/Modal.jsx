@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import style from './Modal.module.css';
+import { setModal } from "../../redux/actions/actions";
+import { useDispatch, useSelector } from "react-redux";
 
 
 const Mayor = () => {
   let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(true);
 
+  const dispatch = useDispatch();
+  const { modal } = useSelector(state => state);
+
+  const [modalIsOpen, setIsOpen] = React.useState(true);
 
   const customStyles = {
     content: {
@@ -27,6 +32,7 @@ const Mayor = () => {
 
   function closeModal() {
     setIsOpen(false);
+    dispatch(setModal(true))
   }
 
 

@@ -9,7 +9,8 @@ import {
     RATE_PRODUCT,
     ADD_CART,
     GET_CART,
-    DELETE_CART_ITEM
+    DELETE_CART_ITEM,
+    SET_MODAL
     // FILTER_CERVEZA, 
     // FILTER_DESTILADOS, 
     // FILTER_ESPUMANTES, 
@@ -108,3 +109,10 @@ export const deleteCartItem  = (id) =>{
         payload: id
     }
 } 
+
+export const setModal = (modal) => {
+    return {
+        type: SET_MODAL,
+        payload: modal
+    }
+}

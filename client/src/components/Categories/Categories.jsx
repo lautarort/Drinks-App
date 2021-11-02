@@ -15,6 +15,7 @@ const Categories = () => {
 	const { categories } = useSelector(state => state);
 
 	function handleClick(e) {
+		// e.preventDefault();
 		dispatch(unmountGet());
 		dispatch(setCategory(e.target.value))
 		dispatch(setPage(1));

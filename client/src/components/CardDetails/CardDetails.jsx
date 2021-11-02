@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProductsDetails, unmountGet } from '../../redux/actions/actions';
+import { getProductsDetails, unmountGet, addCart } from '../../redux/actions/actions';
 import { useState } from 'react';
 import style from './CardDetails.module.css';
 import Rating from '../Rating/Rating';
@@ -25,6 +25,10 @@ function CardDetails(props) {
     useEffect(() => {
         console.log("sin dependecias")
     })
+
+    // const handleAddToCart = (product) => {
+    //     dispatch(addCart(product))
+    // }
 
     return (
         <div className={style.ctnSuperior}>
