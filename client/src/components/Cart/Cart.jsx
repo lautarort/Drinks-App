@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import {Link} from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { getCart } from '../../redux/actions/actions.js';
 import style from './Cart.module.css';
@@ -71,10 +72,10 @@ const Cart = () => {
          </div>
          <div className={style.containerTotal}> 
             <div className={style.preciFinal}>
-                <h1 className={style.total}>TOTAL: $ {totalCart(cart) }</h1>
+                <p className={style.total}><b>TOTAL: </b>   $ {totalCart(cart) }</p>
             </div>
             <div>
-                <button className={style.btn}>PAGAR</button>
+              <Link to="/pago"><button className={style.btn}>PAGAR</button></Link>
             </div>
          </div>
          </div>  

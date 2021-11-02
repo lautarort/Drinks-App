@@ -7,6 +7,7 @@ import NavBar from './components/NavBar/NavBar';
 import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
+import Pago from "./components/Pago/Pago.js"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route exact path='/category/:category' component={Cards} />
       <Route exact path="/" component={Home} />
       <Route path="/detail/:id" component={CardDetails} />
+      <Route path="/pago" component={Pago} />
     </div>
   );
 }
