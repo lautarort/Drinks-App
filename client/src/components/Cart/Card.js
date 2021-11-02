@@ -27,9 +27,10 @@ const Card = ({id, name,image,rating,precio}) => {
 
 	return (
 		<div className={style.container}>
-             <div className={style.containerButton}>
-                 <button onClick={()=> onClose(id)} className={style.button}>X</button>
-             </div>
+        <div>
+                    <img className={style.img} src={image} alt="" />
+                </div>
+             
                 <div className={style.containerName}>
                     <h3 className={style.name}>{name}</h3>
                 </div>
@@ -40,9 +41,10 @@ const Card = ({id, name,image,rating,precio}) => {
                     <button onClick={increment}>+</button>
                     <button disabled={state===1} onClick={decrement}>-</button>
                 </div>*/}
-                <div>
-                    <img className={style.img} src={image} alt="" />
-                </div>
+                
+                <div className={style.containerButton}>
+                 <button onClick={()=> onClose(id)} className={style.button}>X</button>
+             </div>
 
             
         </div>

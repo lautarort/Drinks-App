@@ -10,7 +10,7 @@ import Review from '../Review/Review'
 function CardDetails(props) {
 
     const dispatch = useDispatch();
-    const product = useSelector((state) => state.product);
+    const product = useSelector((state) => state.products.product);
     const { id } = props.match.params;
 
     useEffect(() => {

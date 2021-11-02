@@ -7,8 +7,8 @@ import style from './Cards.module.css';
 
 const Cards = () => {
     const dispatch = useDispatch();
-    const { products } = useSelector( state => state);
-    const { category } = useSelector( state => state)
+    const { products } = useSelector( state => state.products);
+    const { category } = useSelector( state => state.products)
 
     useEffect(() => {
         dispatch(unmountGet());

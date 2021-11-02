@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 const Home = () => {
     const dispatch = useDispatch();
-    const { modal } = useSelector(state => state);
+    const { modal } = useSelector(state => state.functionality);
 
     return (
         <div>

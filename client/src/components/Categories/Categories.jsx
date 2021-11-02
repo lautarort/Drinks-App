@@ -12,7 +12,7 @@ const Categories = () => {
 		dispatch(getCategories());
 	}, [dispatch])
 
-	const { categories } = useSelector(state => state);
+	const { categories } = useSelector(state => state.products);
 
 	function handleClick(e) {
 		// e.preventDefault();
