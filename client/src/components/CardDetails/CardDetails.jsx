@@ -29,21 +29,27 @@ function CardDetails(props) {
     return (
         <div className={style.ctnSuperior}>
             <div className={style.ctnDetalles}>
-                <div className={style.ctnDescripcion}>
-                    <h1 className={style.tituloDescripcion}> Decripción de la bebida  </h1>
-                    <h3 className={style.texDescripcion}>{product.descripcion}</h3>
-
+                <div>
+                    <img className={style.img} src={product.imagen ? product.imagen : `${product}`} alt="img" />
                 </div>
-                <img className={style.img} src={product.imagen ? product.imagen : `${product}`} alt="img" />
+
+
                 <div className={style.ctnCompra}>
                     <h1 className={style.titulo}> {product.name} </h1>
 
                     <div className={style.Ctnprecio}>
-                        <h2 className={style.precio}> Precio: {product.precio} </h2>
-                        <h2 className={style.p}> Categoría de bebida: {product.categoria?.charAt(0).toUpperCase() + product.categoria?.slice(1)} </h2>
+                        <h2 className={style.precio}> {product.precio} </h2>
+                        <h2 className={style.p}>  {product.categoria?.charAt(0).toUpperCase() + product.categoria?.slice(1)} </h2>
                         <h2 className={style.p}><Rating rating={product.rating} numReviews={5} /></h2>
-                        <div className={style.contador}>
-                            <p className={style.textCantidad}>Cantidad</p>
+                    </div>
+                    <div className={style.ctnDescripcion}>
+                        <h1 className={style.tituloDescripcion}> Decripción de la bebida  </h1>
+                        <h3 className={style.texDescripcion}>{product.descripcion}</h3>
+
+                    </div>
+                    <div className={style.contador}>
+                        <p className={style.textCantidad}>Cantidad</p>
+                        <div className={style.ctnBtn} >
                             <button className={style.boton} onClick={() => setCount(count - 1)} > - </button>
                             <h4 className={style.count}>{count}</h4>
                             <button className={style.boton} onClick={() => setCount(count + 1)} > + </button>
