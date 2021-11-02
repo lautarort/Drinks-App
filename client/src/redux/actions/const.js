@@ -19,6 +19,8 @@ const ADD_CART ="ADD_CART";
 const GET_CART ="GET_CART";
 const DELETE_CART_ITEM= "DELETE_CART_ITEM";
 
+const SET_MODAL = "SET_MODAL";
+
 // ORDER
 
 module.exports = {
@@ -31,5 +33,6 @@ module.exports = {
     RATE_PRODUCT,
     ADD_CART,
     GET_CART,
-    DELETE_CART_ITEM
+    DELETE_CART_ITEM,
+    SET_MODAL
 }

@@ -1,4 +1,4 @@
-import { GET_PRODUCTS, GET_CATEGORIES, UNMOUNT_GET, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS, ADD_CART, GET_CART, DELETE_CART_ITEM } from "../actions/const";
+import { GET_PRODUCTS, GET_CATEGORIES, UNMOUNT_GET, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS, ADD_CART, GET_CART, DELETE_CART_ITEM, SET_MODAL } from "../actions/const";
 import { sliceArray } from "./sliceArray";
 
 const initialState = {
@@ -10,6 +10,7 @@ const initialState = {
     categories: [],
     category: "",
     page: 1,
+    modal: false
 }
 
 function reducer(state = initialState, action) {
@@ -34,8 +35,6 @@ function reducer(state = initialState, action) {
                 products: [],
                 allProducts: [],
                 product: {},
-                category: "",
-
             }
         case SET_PAGE:
             return {
@@ -68,7 +67,12 @@ function reducer(state = initialState, action) {
             return {
                 ...state,
                 cart: state.cart.filter(x => x._id !== action.payload)
-            }    
+            }
+        case SET_MODAL:  
+            return {
+                ...state,
+                modal: action.payload
+            }        
         default:
             return state
     }

@@ -24,17 +24,17 @@ const Cart = () => {
     }
     function price(precio){
         let total;
-        let splitprice= precio.split(",");
-        if(splitprice[0].length <=4 ){
+        let splitprice= precio?.split(",");
+        if(splitprice[0]?.length <=4 ){
             if(splitprice[0][0]==="$"){
-               let neto=splitprice[0].split("$");
+               let neto=splitprice[0]?.split("$");
                 total=parseInt(neto[1])
             }else{
             total= parseInt(splitprice[0])
                 }
         }else{
-            let numberFix= splitprice[0].split(".").join("");
-            let finishNumber= numberFix.split("$")[1]
+            let numberFix= splitprice[0]?.split(".").join("");
+            let finishNumber= numberFix?.split("$")[1]
             total= parseInt(finishNumber)
         }
       return total;  
@@ -52,7 +52,7 @@ const Cart = () => {
     return (
         <div className={style.container}>
             <div className={style.cards}>
-        {   cart.length?
+        {   cart?.length?
             cart.map(p => {
                 return(
             <Card
