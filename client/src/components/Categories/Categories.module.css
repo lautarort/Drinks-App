@@ -9,11 +9,9 @@
 
 .btn {
   margin-right: 10px;
-  padding: 0.5em 1.5em;
   background: none;
   color: rgb(255, 255, 255);
   border: none;
-  padding: 5px;
   cursor: pointer;
   font-weight: 600;
   font-size: 12px;
@@ -22,5 +20,8 @@
 
 .btn:hover {
   color: rgb(207, 117, 0);
+} 
 
+.btn:focus {
+  color: rgb(207, 117, 0);
 }
