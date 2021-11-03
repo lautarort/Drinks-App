@@ -22,12 +22,12 @@ const SearchBar = () => {
 
     
     return (
-        <div className={style.SearchBar}>
+        <form onSubmit={e => handleSubmit(e)}className={style.SearchBar}>
             <input  value = {input} className={style.input} 
                     placeholder="Buscar por nombre y marca" 
                     onChange={e => handleInputChange(e)}/>
-            <button onClick = {e => handleSubmit(e)}className={style.btn} >Buscar</button>
-        </div>
+            <button className={style.btn} >Buscar</button>
+        </form>
     );
 };
 

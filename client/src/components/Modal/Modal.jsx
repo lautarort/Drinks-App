@@ -9,7 +9,7 @@ const Mayor = () => {
   let subtitle;
 
   const dispatch = useDispatch();
-  const { modal } = useSelector(state => state);
+  const { modal } = useSelector(state => state.functionality);
 
   const [modalIsOpen, setIsOpen] = React.useState(true);
 
