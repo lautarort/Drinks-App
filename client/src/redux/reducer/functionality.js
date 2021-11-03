@@ -12,6 +12,6 @@ export function functionalityReducer(state=initialState, action){
                 modal: action.payload
             } 
         default: 
-		return state;           
+			return state;           
 	}
 }

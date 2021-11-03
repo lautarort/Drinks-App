@@ -1,5 +1,5 @@
 import { GET_PRODUCTS, GET_CATEGORIES, UNMOUNT_GET, SET_PAGE, SET_CATEGORY, GET_PRODUCTS_DETAILS} from "../actions/const";
-import { sliceArray } from "./sliceArray";
+import { sliceArray } from "./utils/sliceArray";
 
 const initialState={
 	products: [], // contiene sólo los productos de una página
