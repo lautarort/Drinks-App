@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import style from './Login.module.css';
 import {Link} from "react-router-dom";
-import {logGoogle} from "../../redux/actions/actions"
+import {logGoogle} from "../../redux/actions/actions.js"
 import {useDispatch} from "react-redux"
 
 const Login = () => {
@@ -12,7 +12,8 @@ const Login = () => {
 
     const dispatch = useDispatch();
 
-    function onClick () {
+   const handleClick = ()  => {
+        console.log("boton hijo de culiadora")
         dispatch(logGoogle());
     }
 
@@ -38,7 +39,7 @@ const Login = () => {
                 </div>
                 <div>
                 <button className={style.btn}>INGRESÁ</button>
-                <button onClick={onClick} className={style.btn}> Ingresa Google</button>
+                <button onClick={handleClick} className={style.btn}> Ingresa Google</button>
                 </div>
                 <div className={style.link}>
                     No tenes cuenta? <Link to="/register">Registrate</Link>

@@ -27,7 +27,7 @@ export const logGoogle = () => async (dispatch) => {
     try {
         const auth = await axios.get("/google/login")
         return dispatch({
-            type: LOG_GOOGLE,
+            type: LOG_GOOGLE
             //payload
         })
     }
