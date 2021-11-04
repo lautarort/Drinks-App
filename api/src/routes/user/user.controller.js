@@ -1,6 +1,6 @@
-import Item from "../../models/Item.js";
+const Item = require ("../../models/Item.js");
 
-export const getItems = async (req, res) => {
+const getItems = async (req, res) => {
 	try {
 		let {name, category} = req.query;
 		console.log(name)
@@ -21,7 +21,7 @@ export const getItems = async (req, res) => {
 	}
 }
 
-export const getCategories = async(req, res) => {
+ const getCategories = async(req, res) => {
 	try {
 		let categories = await Item.find();
 		categories = categories.map(x => x.categoria);
@@ -33,18 +33,18 @@ export const getCategories = async(req, res) => {
 	}
 }
 
-export const createItem = async (req, res) => {
+ const createItem = async (req, res) => {
 	let newItem = new Item(req.body);
 	newItem = await newItem.save();
 	res.send(newItem);
 }
 
-export const getItemById = async (req, res) => {
+ const getItemById = async (req, res) => {
 	const item = await Item.findById(req.params.id);
 	res.json(item);
 }
 
-export const updateItem = async (req, res) => {
+ const updateItem = async (req, res) => {
 	try {
 		const { id } = req.params;
 		const { number } = req.body;
@@ -85,4 +85,12 @@ export const updateItem = async (req, res) => {
 	catch (error) {
 		console.log(error)
 	}
+}
+
+module.exports = {
+	getItems,
+	getCategories,
+	createItem,
+	getItemById,
+	updateItem
 }

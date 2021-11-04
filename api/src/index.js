@@ -1,6 +1,8 @@
-import app from "./app.js";
-import "./db.js";
+const app = require ("./app.js");
+require ("./db.js");
 
 app.listen(app.get("port"), () => {
 	console.log(` |> server on port: ${app.get("port")}`);
 })
+
+module.exports = app;

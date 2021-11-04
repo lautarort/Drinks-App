@@ -10,7 +10,8 @@ import {
     ADD_CART,
     GET_CART,
     DELETE_CART_ITEM,
-    SET_MODAL
+    SET_MODAL,
+    LOG_GOOGLE
     // FILTER_CERVEZA, 
     // FILTER_DESTILADOS, 
     // FILTER_ESPUMANTES, 
@@ -19,6 +20,25 @@ import {
     // FILTER_VODKA, 
     // FILTER_WISKY, 
 } from './const';
+
+
+
+export const logGoogle = () => async (dispatch) => {
+    try {
+        const auth = await axios.get("/google/login")
+        return dispatch({
+            type: LOG_GOOGLE,
+            //payload
+        })
+    }
+    catch (err){
+        console.log("aca esta el puto error" , err)
+    }
+}
+
+
+
+
 
 
 export const getProducts = ({ name, category }) => async (dispatch) => {
@@ -116,3 +136,4 @@ export const setModal = (modal) => {
         payload: modal
     }
 }
+

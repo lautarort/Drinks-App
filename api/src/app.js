@@ -1,8 +1,8 @@
-import express from "express";
-import morgan from "morgan";
-import cors from "cors";
-import config from "./config.js";
-import indexRoutes from "./routes/index.js"; 
+const express = require ("express");
+const morgan = require ("morgan");
+const cors = require ("cors");
+const config = require ("./config.js");
+const indexRoutes = require ("./routes/index.js"); 
 
 const app = express();
 
@@ -14,4 +14,4 @@ app.use(express.urlencoded({extended: false}));
 
 app.use("/", indexRoutes);
 
-export default app;
+module.exports = app;

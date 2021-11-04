@@ -8,6 +8,7 @@ import Cart from './components/Cart/Cart';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Pago from "./components/Pago/Pago.js"
+import google from './components/Google/Google';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/detail/:id" component={CardDetails} />
       <Route path="/pago" component={Pago} />
+      <Route path="/google" component={google}/>
     </div>
   );
 }

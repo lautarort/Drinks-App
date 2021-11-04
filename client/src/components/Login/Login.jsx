@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import style from './Login.module.css';
 import {Link} from "react-router-dom";
+import {logGoogle} from "../../redux/actions/actions"
+import {useDispatch} from "react-redux"
 
 const Login = () => {
     const [input, setInput] = useState({
         username: '',
         password: ''
     });
+
+    const dispatch = useDispatch();
+
+    function onClick () {
+        dispatch(logGoogle());
+    }
 
     return (
         <div className={style.Login}>
@@ -30,6 +38,7 @@ const Login = () => {
                 </div>
                 <div>
                 <button className={style.btn}>INGRESÁ</button>
+                <button onClick={onClick} className={style.btn}> Ingresa Google</button>
                 </div>
                 <div className={style.link}>
                     No tenes cuenta? <Link to="/register">Registrate</Link>

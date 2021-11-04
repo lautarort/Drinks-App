@@ -21,6 +21,10 @@ const DELETE_CART_ITEM= "DELETE_CART_ITEM";
 
 const SET_MODAL = "SET_MODAL";
 
+//LOGIN
+
+const LOG_GOOGLE = "LOG_GOOGLE"
+
 // ORDER
 
 module.exports = {
@@ -34,5 +38,6 @@ module.exports = {
     ADD_CART,
     GET_CART,
     DELETE_CART_ITEM,
-    SET_MODAL
+    SET_MODAL,
+    LOG_GOOGLE
 }
