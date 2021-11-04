@@ -22,18 +22,24 @@ const itemSchema = new Schema({
 		type: String,
 	},
 	numReviews: {
-		cinco: { type: Number, default: 1},
-		cuatro: { type: Number, default: 1},
-		tres: { type: Number, default: 1},
-		dos: { type: Number, default: 1},
-		uno: { type: Number, default: 1},
+		cinco: { type: Number, default: 1 },
+		cuatro: { type: Number, default: 1 },
+		tres: { type: Number, default: 1 },
+		dos: { type: Number, default: 1 },
+		uno: { type: Number, default: 1 },
 	},
 	categoria: {
 		type: String,
 	}
-	}, {
+}, {
 	versionKey: false,
 	timestamps: true
 });
+
+itemSchema.set('toJSON', {
+	transform: (document, returnedObject) => {
+		returnedObject.codigo = returnedObject._id
+	}
+})
 
 export default model("Item", itemSchema);
