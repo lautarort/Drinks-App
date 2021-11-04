@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import style from './Login.module.css';
 import {Link} from "react-router-dom";
+import { GoogleLogin } from "react-google-login";
 
 const Login = () => {
     const [input, setInput] = useState({
         username: '',
         password: ''
     });
+
+    const googleSuccess = (res) => {
+        console.log(res);
+    }
+
+    const googleFailure = () => {
+        console.log("Error Google")
+    }
 
     return (
         <div className={style.Login}>
@@ -29,7 +38,13 @@ const Login = () => {
                     />
                 </div>
                 <div>
-                <button className={style.btn}>INGRESÁ</button>
+                <GoogleLogin 
+                    clientId="747892078799-2pubruaa67kl0km9f73nffj3tq10lrn1.apps.googleusercontent.com"
+                    onSucces={googleSuccess}
+                    onFailure={googleFailure}
+                    cookiePolicy="single_host_origin"
+                />
+                <button type="submit" className={style.btn}>INGRESÁ</button>
                 </div>
                 <div className={style.link}>
                     No tenes cuenta? <Link to="/register">Registrate</Link>
