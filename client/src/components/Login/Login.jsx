@@ -9,12 +9,13 @@ const Login = () => {
         password: ''
     });
 
-    const googleSuccess = (res) => {
+    const googleSuccess = async (res) => {
         console.log(res);
     }
 
-    const googleFailure = () => {
-        console.log("Error Google")
+    const googleFailure = (err) => {
+        console.log(err);
+        console.log("Google Sing In was unsuccessful :(")
     }
 
     return (
@@ -40,7 +41,7 @@ const Login = () => {
                 <div>
                 <GoogleLogin 
                     clientId="747892078799-2pubruaa67kl0km9f73nffj3tq10lrn1.apps.googleusercontent.com"
-                    onSucces={googleSuccess}
+                    onSuccess={googleSuccess}
                     onFailure={googleFailure}
                     cookiePolicy="single_host_origin"
                 />
