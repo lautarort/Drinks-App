@@ -1,7 +1,7 @@
 const pkg = require("mongoose");
 const { Schema, model } = pkg;
 
-const ticketSchema = new Schema({
+const TicketSchema = new Schema({
     fecha:{
         type: Date,
         default: Date.now,
