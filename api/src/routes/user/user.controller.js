@@ -1,7 +1,9 @@
-import User from "../../models/User.js";
+const User = require("../../models/User.js");
+const passport = require("passport");
+const jwt = require("jsonwebtoken");
 
 
-export const getUserByNP = async (req, res) => {
+ const getUserByNP = async (req, res) => {
     const { nombre, contraseña } = req.body;
     try {
         const getByNP = await User.findOne({nombre, contraseña});
@@ -12,7 +14,7 @@ export const getUserByNP = async (req, res) => {
     }
 }
 
-export const getUserById = async (req, res) => {
+ const getUserById = async (req, res) => {
     const { id } = req.params
     try {
         const getById = await User.findById(id);
@@ -24,27 +26,33 @@ export const getUserById = async (req, res) => {
 }
 
 
-export const postUser = async (req, res) => {
-    const { 
-        nombre,
-        apellido, 
-        contraseña, 
-        email, 
-        direccion, 
-        telefono,
-        admin, 
-        itemList,
-        ticketHistory 
-    } = req.body;
-
-    try {
-        const add = await User.findById(_id);   
-    } catch (error) {
-        console.log(error);
-    }
+ const postUser = async (req, res) => {
+    res.json({message: "Se registro correctamente", user: req.user})    
 };
 
-export const getUser = async (req, res) => {
+//  const postLogin = async (req, res) => {
+//     passport.authenticate("login", async (err, user, info) =>{
+//         try {
+//             if(err || !user){
+//                 const error = new Error("New Error")
+//                 return error
+//             }
+//             req.login(user, {session: false}, async (err) =>{
+//                 if(err){
+//                     return err
+//                 }
+//                 const body = {id: user._id, email: user.email}
+//                 const token = jwt.sign({user: body}, "top_secret")
+//                 return res.json({token})
+//             })
+//         } catch (error) {
+//             return error
+//         }
+//     }) (req, res)
+// }
+
+
+ const getUser = async (req, res) => {
     try {
         const getDB = await User.find().populate('itemList');
         
@@ -54,3 +62,11 @@ export const getUser = async (req, res) => {
         console.log(error);
     }
 };
+
+
+module.exports = {
+    getUserByNP,
+    getUserById,
+    postUser,
+    getUser
+}

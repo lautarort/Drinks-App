@@ -1,10 +1,11 @@
-import pkg from "mongoose";
+const pkg = require("mongoose");
+const bcrypt  = require("bcrypt")
 const { Schema, model } = pkg;
 
 const usersSchema = new Schema({
 	nombre: {
 		type: String,
-		required: true,
+		//required: true,
 		trim: true
 	},
 	apellido: {
@@ -46,4 +47,16 @@ const usersSchema = new Schema({
 	timestamps: true
 });
 
-export default model("Users", usersSchema);
+usersSchema.pre("save", async function(next){
+    const hash = await bcrypt.hash(this.contraseña, 10)
+    this.contraseña = hash
+    next()
+})
+
+usersSchema.methods.isValidContraseña = async (contraseña) => {
+   const user = this
+   const compara = await bcrypt.compare(contraseña, user.contraseña)
+   return compara
+}
+
+module.exports =  model("Users", usersSchema);

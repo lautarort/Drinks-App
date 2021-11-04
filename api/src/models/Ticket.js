@@ -1,4 +1,4 @@
-import pkg from "mongoose";
+const pkg = require("mongoose");
 const { Schema, model } = pkg;
 
 const ticketSchema = new Schema({
@@ -45,4 +45,4 @@ const ticketSchema = new Schema({
     }
 });
 
-export default model('Ticket', ticketSchema);
+module.exports =  model('Ticket', ticketSchema);

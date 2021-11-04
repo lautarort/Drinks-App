@@ -1,4 +1,4 @@
-import pkg from "mongoose";
+const pkg = require("mongoose");
 const { Schema, model } = pkg;
 
 const itemSchema = new Schema({
@@ -42,4 +42,4 @@ itemSchema.set('toJSON', {
 	}
 })
 
-export default model("Item", itemSchema);
+module.exports =  model("Item", itemSchema);

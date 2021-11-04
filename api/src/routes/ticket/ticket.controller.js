@@ -1,5 +1,9 @@
-import Ticket from "../../models/Ticket";
+const Ticket = require("../../models/Ticket");
 
-export const getTicket = () => {
+ const getTicket = () => {
 
 };
+
+module.exports = {
+    getTicket
+}
