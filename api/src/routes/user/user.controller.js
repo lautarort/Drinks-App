@@ -1,5 +1,21 @@
+const googleClientId = "747892078799-2pubruaa67kl0km9f73nffj3tq10lrn1.apps.googleusercontent.com"
+
 const passport = require("passport");
 const jwt = require("jsonwebtoken");
+const {OAuth2Client} = require ('google-auth-library')
+const client = new OAuth2Client(googleClientId)
+
+
+const googleLogin = (req, res) => {
+    const token = req.body.token
+    client.verifyIdToken({ idToken: token, audience: googleClientId })
+        .then(res => {
+            const { email_verified, name, email } = res.payload 
+            console.log(res.payload)
+            res.send("hola")
+        })
+        .catch(err => console.log(err));
+}
 
 
 const postUser = async (req, res) => {
@@ -79,4 +95,5 @@ module.exports = {
     postLogin,
     postUser,
     profileAuthenticate,
+    googleLogin
 }
