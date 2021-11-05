@@ -19,10 +19,11 @@ const Login = () => {
         //la idea mas adelante, es llevar esta data al back (deberia ser facil) y ahi checkear si existe, 
         //y usar la lógica que usen los chicos para validar a los otros usuarios.
         //pero con una funcion distinta que no corrobore la password (ya que aca no tiene)
-
         const token= res?.tokenId;
+        const data = { result, token }
         try {
-          dispatch({type: "AUTH", data:{result, token} })  //VER REDUCER:asi tira las actions el chabon, me dio cosa cambiarlas
+          dispatch({type: "AUTH", data: data })  //VER REDUCER:asi tira las actions el chabon, me dio cosa cambiarlas
+          dispatch(findOrCreateUser(data))
           history.push("/"); // para que cuando termine el login, te redirige al home.
             //Para bloquear el carrito tendriamos que ahcer simplemente que chequee el user, y de ser null redirigimos (history.push("/login"))
         } catch (error) {

@@ -1,9 +1,8 @@
-import { AUTH, LOGOUT} from "../actions/const.js";
+import { AUTH, LOGOUT } from "../actions/const.js";
 
 
-const initialState={
-	user:null
-	
+const initialState = {
+	user: null	
 }
 
 
@@ -17,12 +16,12 @@ export function userReducer(state=initialState, action){
 				user: action?.data
 			};
 		case LOGOUT: 
-		localStorage.clear(); //limpia la localstorage, entonces el useEffect del navBar va a comprobar que  user=null
-		//me parece redundante hacer el user:null , ya que se maneja todo por localstorage, pero bueno.
-		return{
-			...state,
-			user: null
-		}	
+			localStorage.clear(); //limpia la localstorage, entonces el useEffect del navBar va a comprobar que  user=null
+			//me parece redundante hacer el user:null , ya que se maneja todo por localstorage, pero bueno.
+			return{
+				...state,
+				user: null
+			}	
 		default: 
 		return state;
 	}
