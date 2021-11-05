@@ -23,6 +23,10 @@ const SET_MODAL = "SET_MODAL";
 
 // ORDER
 
+//USER
+const AUTH="AUTH";
+const LOGOUT= "LOGOUT"
+
 module.exports = {
     GET_PRODUCTS,
     GET_PRODUCTS_DETAILS,
@@ -34,5 +38,7 @@ module.exports = {
     ADD_CART,
     GET_CART,
     DELETE_CART_ITEM,
-    SET_MODAL
+    SET_MODAL,
+    AUTH,
+    LOGOUT
 }

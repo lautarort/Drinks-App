@@ -1,16 +1,33 @@
 import React, { useState } from 'react';
+import {useDispatch} from "react-redux"
 import style from './Login.module.css';
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import { GoogleLogin } from "react-google-login";
 
 const Login = () => {
+    const history=useHistory();
+    const dispatch= useDispatch();
     const [input, setInput] = useState({
         username: '',
         password: ''
     });
 
-    const googleSuccess = (res) => {
-        console.log(res);
+    const googleSuccess = async(res) => {
+
+
+        const result= res?.profileObj; //aca esta toda la data relevante(email, token, nombre, foto, etc)
+        //la idea mas adelante, es llevar esta data al back (deberia ser facil) y ahi checkear si existe, 
+        //y usar la lógica que usen los chicos para validar a los otros usuarios.
+        //pero con una funcion distinta que no corrobore la password (ya que aca no tiene)
+
+        const token= res?.tokenId;
+        try {
+          dispatch({type: "AUTH", data:{result, token} })  //VER REDUCER:asi tira las actions el chabon, me dio cosa cambiarlas
+          history.push("/"); // para que cuando termine el login, te redirige al home.
+            //Para bloquear el carrito tendriamos que ahcer simplemente que chequee el user, y de ser null redirigimos (history.push("/login"))
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     const googleFailure = () => {
@@ -40,7 +57,7 @@ const Login = () => {
                 <div>
                 <GoogleLogin 
                     clientId="747892078799-2pubruaa67kl0km9f73nffj3tq10lrn1.apps.googleusercontent.com"
-                    onSucces={googleSuccess}
+                    onSuccess={googleSuccess}
                     onFailure={googleFailure}
                     cookiePolicy="single_host_origin"
                 />
