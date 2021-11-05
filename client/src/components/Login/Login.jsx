@@ -29,10 +29,6 @@ const Login = () => {
         } catch (error) {
             console.log(error)
         }
-=======
-    const googleSuccess = async (res) => {
-        console.log(res);
->>>>>>> d89a4970c71b0d85fe5f7b072071c5d68db940ab
     }
 
     const googleFailure = (err) => {
