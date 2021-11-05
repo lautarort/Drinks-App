@@ -1,41 +1,41 @@
-// const User = require("../../models/User.js");
 const passport = require("passport");
 const jwt = require("jsonwebtoken");
 
 
 const postUser = async (req, res) => {
-    res.json({ message: "Se registro correctamente", user: req.user })
+    res.json({ message: "Se registro correctamente", user: req.user });
 };
 
 const postLogin = async (req, res) => {
     passport.authenticate('login', async (err, user, info) => {
         try {
             if (err || !user) {
-                const error = new Error("New Error")
-                return error
+                const error = new Error("New Error");
+                return error;
             }
+
             req.login(user, { session: false }, async (err) => {
-                if (err) {
-                    return err
-                }
-                const body = { id: user._id, email: user.email }
-                const token = jwt.sign({ user: body }, "top_secret")
-                return res.json({ token })
-            })
+                if (err) return err;
+
+                const body = { id: user._id, email: user.email };
+                const token = jwt.sign({ user: body }, "top_secret");
+
+                return res.json({ token });
+            });
         } catch (error) {
-            return error
+            console.log(error);
         }
     })(req, res)
-}
+};
 
 const profileAuthenticate = async (req, res, next) => {
     res.json({
-      message: 'Dale que sos vos',
-      user: req.user,
-      token: req.query.secret_token,
-    })
-}
-  
+        message: 'Dale que sos vos',
+        user: req.user,
+        token: req.query.secret_token,
+    });
+};
+
 
 //  const getUserByNP = async (req, res) => {
 //     const { nombre, contraseña } = req.body;
@@ -79,5 +79,4 @@ module.exports = {
     postLogin,
     postUser,
     profileAuthenticate,
-
 }
