@@ -12,7 +12,6 @@ const Login = () => {
         password: ''
     });
 
-<<<<<<< HEAD
     const googleSuccess = async(res) => {
 
 
