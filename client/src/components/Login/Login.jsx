@@ -12,7 +12,9 @@ const Login = () => {
 
     const dispatch = useDispatch();
 
-   const handleClick = ()  => {
+   const handleClick = (e)  => {
+       
+        e.preventDefault()
         console.log("boton hijo de culiadora")
         dispatch(logGoogle());
     }
@@ -39,6 +41,8 @@ const Login = () => {
                 </div>
                 <div>
                 <button className={style.btn}>INGRESÁ</button>
+                </div>
+                <div>
                 <button onClick={handleClick} className={style.btn}> Ingresa Google</button>
                 </div>
                 <div className={style.link}>
