@@ -1,13 +1,14 @@
-import { Router } from "express";
-import { getItems, createItem, getItemById, getCategories, updateItem } from "./user.controller.js";
+const { Router } = require("express");
+const passport = require("passport");
+const { postUser, postLogin, profileAuthenticate } = require("./user.controller.js");
+// getUser, getUserById, getUserByNP otros contolers
 
 const router = Router();
 
-//    /user/items
-router.get("/items", getItems); // acá podría llegar /user/items?category=vodka por ejemplo
-router.get("/items/categories", getCategories);
-router.put("/items/update/:id", updateItem);
-router.post("/items", createItem);
-router.get("/items/:id", getItemById);
+// router.get('/user', getUser);
+// router.get('/user/:id', getUserById);
+router.post('/user/register', passport.authenticate("register", { session: false }), postUser);
+router.post('/user/login', postLogin);
+router.get('/user/profile', passport.authenticate('jwt', { session: false }), profileAuthenticate);
 
-export default router;
+module.exports = router;

@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import config from "./config.js";
+const mongoose = require("mongoose");
+const config =  require("./config.js");
 
 const MONGODB_URI = `mongodb+srv://molucax:${config.MONGO_PASSWORD}@drinkscluster.miouw.mongodb.net/drinks?retryWrites=true&w=majority`
 
@@ -10,4 +10,3 @@ mongoose
 	})
 	.then(db => console.log(` |> database connected: ${db.connection.name}`))
 	.catch(err => console.log(err));
-	//hola
