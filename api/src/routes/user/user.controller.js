@@ -1,20 +1,51 @@
-const googleClientId = "747892078799-2pubruaa67kl0km9f73nffj3tq10lrn1.apps.googleusercontent.com"
-
 const passport = require("passport");
 const jwt = require("jsonwebtoken");
 const {OAuth2Client} = require ('google-auth-library')
-const client = new OAuth2Client(googleClientId)
+const client = new OAuth2Client("747892078799-2pubruaa67kl0km9f73nffj3tq10lrn1.apps.googleusercontent.com")
+const User = require("../../models/User")
 
 
 const googleLogin = (req, res) => {
-    const token = req.body.token
-    client.verifyIdToken({ idToken: token, audience: googleClientId })
-        .then(res => {
-            const { email_verified, name, email } = res.payload 
-            console.log(res.payload)
-            res.send("hola")
+    const { tokenId } = req.body;
+    client.verifyIdToken({ idToken: tokenId, audience: "747892078799-2pubruaa67kl0km9f73nffj3tq10lrn1.apps.googleusercontent.com" })
+        .then(response => {
+            const { email_verified, email } = response.payload 
+            // console.log(response.payload)
+            if (email_verified) {
+                 User.findOne({email}).exec((err, user) => {
+                     if(err) {
+                         return res.status(400).json({
+                             error: "Something went wrong"
+                         })
+                     }
+                     else {
+                         if(user) { 
+                            const body = { id: user._id, email: user.email };
+                            const token = jwt.sign({ user: body }, "top_secret");
+                            return res.json({ token });
+                        }
+                         else {
+                            let contraseña = email + "top_secret";
+                            let newUser = new User({ email, contraseña});
+                            newUser.save((err, data) => {
+                                if(err) {
+                                    return res.status(400).json({
+                                        error: "Something went wrong..."
+                                    })
+                                }
+                                const token = jwt.sign({ user: newUser }, "top_secret");
+                                const {_id, email } = newUser;
+                                res.json({
+                                    token,
+                                    user: {_id, email}
+                                })
+                            })
+                         }
+                     }
+                 })
+            }
         })
-        .catch(err => console.log(err));
+        .catch(err => console.log("ERROR googleLogin"));
 }
 
 

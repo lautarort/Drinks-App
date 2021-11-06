@@ -117,9 +117,9 @@ export const setModal = (modal) => {
     }
 }
 
-export const loginGoogle = (token) => async (dispatch) => {
+export const loginGoogle = (data) => async (dispatch) => {
     try {
-        const res = await axios.post("/user/google", token)
+        const res = await axios.post("/users/user/google", data)
         return dispatch ({
             type: "GOOGLE"
         })        

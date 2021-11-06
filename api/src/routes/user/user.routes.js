@@ -10,6 +10,6 @@ const router = Router();
 router.post('/user/register', passport.authenticate("register", { session: false }), postUser);
 router.post('/user/login', postLogin);
 router.get('/user/profile', passport.authenticate('jwt', { session: false }), profileAuthenticate);
-router.post("/user/google", googleLogin)
+router.post('/user/google', googleLogin)
 
 module.exports = router;
