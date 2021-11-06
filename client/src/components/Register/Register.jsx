@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import style from './Register.module.css';
 import { useDispatch } from 'react-redux';
 import { registerLocal } from '../../redux/actions/actions';
-import { Link, useHistory} from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import Modal from 'react-modal';
 
 const Register = () => {
     const dispatch = useDispatch()
@@ -13,6 +14,8 @@ const Register = () => {
         email: '',
         contraseña: ''
     });
+
+    const [modalIsOpen, setIsOpen] = useState(false);
 
     // const validate = () => {
     //     let errors = {};
@@ -40,22 +43,38 @@ const Register = () => {
     }
 
     const handleOnSumit = e => {
-      
+
         // if (
         //     !errors.email &&
         //     !errors.contraseña
 
         // ) {
-            e.preventDefault();
-            dispatch(registerLocal(values));
-            history.push('/')
-           
+        e.preventDefault();
+        dispatch(registerLocal(values));
+        // history.push('/login');
+
 
         // } else {
         //     alert("The form is required");
         // }
     }
 
+    const customStyles = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+        },
+    };
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    const handleOnClick = () => history.push('/login');
 
     return (
         <div className={style.Register}>
@@ -86,7 +105,7 @@ const Register = () => {
                     <label className={style.title}>Contraseña</label>
                     <input className={style.input}
                         name='contraseña'
-                        type="text"
+                        type='password'
                         placeholder='Su contraseña...'
                         onChange={handleOnChange}
                         value={values.contraseña}
@@ -95,9 +114,23 @@ const Register = () => {
                 </div>
 
                 <div>
-                    <button className={style.btn}>REGISTRARSE</button>
-                </div>
+                    <div>
+                        <button className={style.btn} onClick={openModal}>REGISTRARSE</button>
+                    </div>
+                    <Modal
+                        isOpen={modalIsOpen}
+                        style={customStyles}
+                        contentLabel="Example Modal"
+                    >
+                        <div className={style.ctnText} >
+                            <h2 className={style.title} >El usuario se a registrado correctamente</h2>
+                        </div>
 
+                        <div>
+                            <button className={style.modalBTN} onClick={handleOnClick}>Aceptar</button>
+                        </div>
+                    </Modal>
+                </div>
                 <div className={style.link}>
                     Ya tenes cuenta?  <Link to="/login">Ingresá</Link>
                 </div>
